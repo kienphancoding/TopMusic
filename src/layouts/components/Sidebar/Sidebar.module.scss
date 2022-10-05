@@ -1,0 +1,42 @@
+.wrapper {
+  position: fixed;
+  top: 54px;
+  height: calc(100% - 54px);
+  background-color: var(--color-2);
+  overflow: auto;
+  overflow-y: auto;
+  overflow-x: hidden;
+  width: 360px;
+  &::-webkit-scrollbar {
+    width: 10px;
+    background-color: var(--color-1);
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: var(--color-6);
+    border-radius: 10px;
+  }
+  .childrenTitle {
+    font-size: 30px;
+    background-color: var(--color-3);
+    font-weight: 600;
+    padding: 20px 30px;
+  }
+  h1 {
+    text-align: center;
+  }
+  .name {
+    font-size: 26px;
+    font-weight: 600;
+    padding: 10px;
+  }
+  .img {
+    --radius: 60px;
+    width: var(--radius);
+    height: var(--radius);
+  }
+  .link {
+    display: flex;
+    flex-direction: row;
+    height: 60px;
+  }
+}

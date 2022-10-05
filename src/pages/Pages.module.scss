@@ -1,0 +1,117 @@
+.wrapper {
+  margin: 0 auto;
+  .list {
+    height: 300px;
+    overflow: auto;
+    &::-webkit-scrollbar {
+      width: 10px;
+      background-color: var(--color-1);
+    }
+    &::-webkit-scrollbar-thumb {
+      background-color: var(--color-6);
+      border-radius: 100px;
+    }
+  }
+  .main {
+    display: flex;
+
+    .intro {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: auto 0;
+    }
+    img {
+      --radius: 180px;
+      width: var(--radius);
+      height: var(--radius);
+      border-radius: 100px;
+      animation: spin 20s linear infinite;
+    }
+    h1 {
+      font-size: 38px;
+      font-weight: 600;
+    }
+    p {
+      font-size: 27px;
+      font-weight: 600;
+    }
+  }
+  .menu {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  button {
+    --radius: 60px;
+    width: var(--radius);
+    height: var(--radius);
+    border-radius: 100px;
+    border: 3px solid var(--color-6);
+    box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px,
+      4px 4px 0px 0px, 5px 5px 0px 0px;
+    position: relative;
+    &:active {
+      box-shadow: 0px 0px 0px 0px;
+      top: 5px;
+      left: 5px;
+    }
+    .icon {
+      font-size: 20px;
+    }
+  }
+  .active{
+    background-color: var(--color-3);
+  }
+  .item {
+    display: flex;
+    flex-direction: row;
+    box-shadow: var(--color-6) 0 2px 4px,
+      var(--color-6) 0 7px 13px -3px, var(--color-6) 0 -3px 0 inset;
+    border-radius: 4px;
+    position: relative;
+    transition: box-shadow 0.15s, transform 0.15s;
+    touch-action: manipulation;
+    will-change: box-shadow, transform;
+    // padding:0 10px;
+    margin: 7px 0;
+    &:focus {
+      box-shadow:var(--color-6) 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px,
+        rgba(45, 35, 66, 0.3) 0 7px 13px -3px,var(--color-6) 0 -3px 0 inset;
+    }
+    &:hover {
+      box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px,
+        rgba(45, 35, 66, 0.3) 0 7px 13px -3px,var(--color-6) 0 -3px 0 inset;
+      transform: translateY(-2px);
+    }
+    &:active {
+      box-shadow:var(--color-6) 0 3px 7px inset;
+      transform: translateY(2px);
+    }
+    h1{
+        font-size: 28px;
+        font-weight: 600;
+    }
+    p{
+        font-size: 24px;
+        font-size: 600;
+    }
+  }
+  .info {
+    display: flex;
+    flex-direction: column;
+  }
+  .img {
+    --radius: 70px;
+    width: var(--radius);
+    height: var(--radius);
+  }
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
