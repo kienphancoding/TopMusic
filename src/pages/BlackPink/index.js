@@ -1,6 +1,6 @@
 import cx from "clsx";
 import { useRef, useEffect, useState } from "react";
-import { AlanWalkerSongs } from "../../songs";
+import { BLACKPINK } from "../../songs";
 import style from "../Pages.module.scss";
 import {
   faPlay,
@@ -11,9 +11,10 @@ import {
   faShuffle,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import AlanWalkerLists from "./AlanWalker"
+import BlackPinkSongs from "./BlackPink"
 
-const AlanWalker = () => {
+
+const BlackPink = () => {
   const [play, setPlay] = useState(true); // true la hien nut play
   const [indexSong, setIndexSong] = useState(0); // vi tri hien tai cua bai hat
   const [loopSong, setLoopSong] = useState(false); // lap lai bai hat
@@ -27,11 +28,11 @@ const AlanWalker = () => {
   };
 
   const handleNextSong = () => {
-    setIndexSong(indexSong === AlanWalkerSongs.length - 1 ? 0 : indexSong + 1);
+    setIndexSong(indexSong === BLACKPINK.length - 1 ? 0 : indexSong + 1);
   };
 
   const handlePrevSong = () => {
-    setIndexSong(indexSong === 0 ? AlanWalkerSongs.length - 1 : indexSong - 1);
+    setIndexSong(indexSong === 0 ? BLACKPINK.length - 1 : indexSong - 1);
   };
 
   const handleLoopSong = () => {
@@ -39,74 +40,60 @@ const AlanWalker = () => {
   };
 
   const handleRandomSong = () => {
-    for (let i = 0; i < AlanWalkerSongs.length; i++) {
-      let random = Math.floor(Math.random() * AlanWalkerSongs.length);
+    for (let i = 0; i < BLACKPINK.length; i++) {
+      let random = Math.floor(Math.random() * BLACKPINK.length);
       let temp;
-      temp = AlanWalkerSongs[i];
-      AlanWalkerSongs[i] = AlanWalkerSongs[random];
-      AlanWalkerSongs[random] = temp;
+      temp = BLACKPINK[i];
+      BLACKPINK[i] = BLACKPINK[random];
+      BLACKPINK[random] = temp;
     }
     setIndexSong(indexSong===0 ?indexSong+1 :0)
   };
 
-  const playRef = useRef(1);
-  const widthRef = useRef();
+  const blackpinkRef = useRef(1);
+  const widthRefBlackPink = useRef();
 
   //scroll into view
   useEffect(() => {
-    const timeScrollIntoView = setTimeout(() => {
+    const timeScrollIntoViewBlackPink = setTimeout(() => {
       document.getElementsByClassName(cx(style.active))[0].scrollIntoView({
         behavior: "smooth",
         block: "end",
         inline: "nearest",
       });
     }, 500);
-    return () => clearTimeout(timeScrollIntoView);
+    return () => clearTimeout(timeScrollIntoViewBlackPink);
   }, [indexSong]);
 
   //event set currtime song
   const checkWidth = (e) => {
-    let width = widthRef.current.clientWidth;
+    let width = widthRefBlackPink.current.clientWidth;
     const offset = e.nativeEvent.offsetX;
     let progress = offset / width;
-    playRef.current.currentTime = progress * playRef.current.duration;
+    blackpinkRef.current.currentTime = progress * blackpinkRef.current.duration;
   };
 
   //set width current time song
   useEffect(() => {
-    const timeSetWidth = setInterval(() => {
+    const timeSetWidthBlackPink = setInterval(() => {
       document.getElementsByClassName(cx(style.duration))[0].style.width = `${
-        (Math.floor(playRef.current.currentTime) /
-          Math.floor(playRef.current.duration)) *
+        (Math.floor(blackpinkRef.current.currentTime) /
+          Math.floor(blackpinkRef.current.duration)) *
         100
       }%`;
     }, 500);
-    return () => clearInterval(timeSetWidth);
+    return () => clearInterval(timeSetWidthBlackPink);
   }, []);
-
-  //auto next song
-  useEffect(() => {
-    const timeCheckLoop = setInterval(() => {
-      if (
-        Math.floor(playRef.current.currentTime) ===
-        Math.floor(playRef.current.duration)
-      ) {
-        handleNextSong();
-      }
-    }, 100);
-
-    return () => clearInterval(timeCheckLoop);
-  }, [indexSong]);
 
   //loop song
   useEffect(() => {
     const timeCheckLoop = setInterval(() => {
       if (
-        Math.floor(playRef.current.currentTime) ===
-          Math.floor(playRef.current.duration) &&
+        Math.floor(blackpinkRef.current.currentTime) ===
+          Math.floor(blackpinkRef.current.duration) &&
         loopSong === true
       ) {
-        playRef.current.currentTime = 0;
+        blackpinkRef.current.currentTime = 0;
         setLoopSong(false);
       }
     }, 100);
@@ -114,31 +101,44 @@ const AlanWalker = () => {
     return () => clearInterval(timeCheckLoop);
   }, [loopSong]);
 
+  //auto next song
+  useEffect(() => {
+    const timeCheckLoopBlackPink = setInterval(() => {
+      if (
+        Math.floor(blackpinkRef.current.currentTime) ===
+        Math.floor(blackpinkRef.current.duration)
+      ) {
+        handleNextSong();
+      }
+    }, 100);
+    return () => clearInterval(timeCheckLoopBlackPink);
+  }, [indexSong]);
+
   //play or pause
   useEffect(() => {
     if (play === false) {
-      playRef.current.play();
+      blackpinkRef.current.play();
     } else {
-      playRef.current.pause();
+      blackpinkRef.current.pause();
     }
   }, [play, indexSong, loopSong]);
+
   return (
     <div className={cx(style.wrapper)}>
       <div className={cx(style.main)}>
-        <img src={AlanWalkerSongs[indexSong].img} alt="img" />
+        <img src={BLACKPINK[indexSong].img} alt="img" />
         <div className={cx(style.intro)}>
-          <h1>{AlanWalkerSongs[indexSong].song}</h1>
-          <p>{AlanWalkerSongs[indexSong].name}</p>
+          <h1>{BLACKPINK[indexSong].song}</h1>
+          <p>{BLACKPINK[indexSong].name}</p>
         </div>
       </div>
 
-      <AlanWalkerLists  indexSong={indexSong} setIndexSong={setIndexSong}/>
+      <BlackPinkSongs indexSong={indexSong} setIndexSong={setIndexSong}/>
 
-      <audio ref={playRef} src={AlanWalkerSongs[indexSong].src} />
-
+      <audio ref={blackpinkRef} src={BLACKPINK[indexSong].src} />
       <div
         className={cx(style.durationBar)}
-        ref={widthRef}
+        ref={widthRefBlackPink}
         onClick={checkWidth}
       >
         <div className={cx(style.duration)}></div>
@@ -176,4 +176,4 @@ const AlanWalker = () => {
   );
 };
 
-export default AlanWalker;
+export default BlackPink;

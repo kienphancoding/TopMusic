@@ -1,16 +1,21 @@
 import Home from "../pages/Home"
-import Favorites from "../pages/Favorites"
-import Static from "../pages/Static"
+// import Static from "../pages/Static"
 import AlanWalker from "../pages/AlanWalker"
+import BlackPink from "../pages/BlackPink"
+import THECHAINSMOKERS from "../pages/TheChainsmokers"
+import MartinGarrix from "../pages/MartinGarrix"
 
-import HeaderOnly from "../layouts/HeaderOnly"
+// import HeaderOnly from "../layouts/HeaderOnly"
+import NoMatch from "../pages/NoMatch"
 
 const routes = [
     {path:"/",component:Home},
-    {path:"/favorites",component:Favorites},
-    {path:"/statics",component:Static,layout:HeaderOnly},
+    // {path:"/statics",component:Static,layout:HeaderOnly},
     {path:"/AlanWalker",component:AlanWalker},
-    {path:"*",component:AlanWalker,layout:null},
+    {path:"/BlackPink",component:BlackPink},
+    {path:"/TheChainsmokers",component:THECHAINSMOKERS},
+    {path:"/MartinGarrix",component:MartinGarrix},
+    {path:"*",component:NoMatch,layout:null},
    
 ]
 

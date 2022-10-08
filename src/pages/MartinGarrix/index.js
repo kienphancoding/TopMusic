@@ -1,6 +1,6 @@
 import cx from "clsx";
 import { useRef, useEffect, useState } from "react";
-import { AlanWalkerSongs } from "../../songs";
+import { MartinGarrixSongs } from "../../songs";
 import style from "../Pages.module.scss";
 import {
   faPlay,
@@ -11,9 +11,8 @@ import {
   faShuffle,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import AlanWalkerLists from "./AlanWalker"
 
-const AlanWalker = () => {
+const MartinGarrix = () => {
   const [play, setPlay] = useState(true); // true la hien nut play
   const [indexSong, setIndexSong] = useState(0); // vi tri hien tai cua bai hat
   const [loopSong, setLoopSong] = useState(false); // lap lai bai hat
@@ -27,11 +26,11 @@ const AlanWalker = () => {
   };
 
   const handleNextSong = () => {
-    setIndexSong(indexSong === AlanWalkerSongs.length - 1 ? 0 : indexSong + 1);
+    setIndexSong(indexSong === MartinGarrixSongs.length - 1 ? 0 : indexSong + 1);
   };
 
   const handlePrevSong = () => {
-    setIndexSong(indexSong === 0 ? AlanWalkerSongs.length - 1 : indexSong - 1);
+    setIndexSong(indexSong === 0 ? MartinGarrixSongs.length - 1 : indexSong - 1);
   };
 
   const handleLoopSong = () => {
@@ -39,14 +38,15 @@ const AlanWalker = () => {
   };
 
   const handleRandomSong = () => {
-    for (let i = 0; i < AlanWalkerSongs.length; i++) {
-      let random = Math.floor(Math.random() * AlanWalkerSongs.length);
+    for (let i = 0; i < MartinGarrixSongs.length; i++) {
+      let random = Math.floor(Math.random() * MartinGarrixSongs.length);
       let temp;
-      temp = AlanWalkerSongs[i];
-      AlanWalkerSongs[i] = AlanWalkerSongs[random];
-      AlanWalkerSongs[random] = temp;
+      temp = MartinGarrixSongs[i];
+      MartinGarrixSongs[i] = MartinGarrixSongs[random];
+      MartinGarrixSongs[random] = temp;
     }
-    setIndexSong(indexSong===0 ?indexSong+1 :0)
+    setPlay(!play);
+    setIndexSong(0)
   };
 
   const playRef = useRef(1);
@@ -54,14 +54,14 @@ const AlanWalker = () => {
 
   //scroll into view
   useEffect(() => {
-    const timeScrollIntoView = setTimeout(() => {
+    const timeScrollIntoViewBlackPink = setTimeout(() => {
       document.getElementsByClassName(cx(style.active))[0].scrollIntoView({
         behavior: "smooth",
         block: "end",
         inline: "nearest",
       });
     }, 500);
-    return () => clearTimeout(timeScrollIntoView);
+    return () => clearTimeout(timeScrollIntoViewBlackPink);
   }, [indexSong]);
 
   //event set currtime song
@@ -74,29 +74,15 @@ const AlanWalker = () => {
 
   //set width current time song
   useEffect(() => {
-    const timeSetWidth = setInterval(() => {
+    const timeSetWidthBlackPink = setInterval(() => {
       document.getElementsByClassName(cx(style.duration))[0].style.width = `${
         (Math.floor(playRef.current.currentTime) /
           Math.floor(playRef.current.duration)) *
         100
       }%`;
     }, 500);
-    return () => clearInterval(timeSetWidth);
+    return () => clearInterval(timeSetWidthBlackPink);
   }, []);
-
-  //auto next song
-  useEffect(() => {
-    const timeCheckLoop = setInterval(() => {
-      if (
-        Math.floor(playRef.current.currentTime) ===
-        Math.floor(playRef.current.duration)
-      ) {
-        handleNextSong();
-      }
-    }, 100);
-
-    return () => clearInterval(timeCheckLoop);
-  }, [indexSong]);
 
   //loop song
   useEffect(() => {
@@ -114,6 +100,19 @@ const AlanWalker = () => {
     return () => clearInterval(timeCheckLoop);
   }, [loopSong]);
 
+  //auto next song
+  useEffect(() => {
+    const timeCheckLoopBlackPink = setInterval(() => {
+      if (
+        Math.floor(playRef.current.currentTime) ===
+        Math.floor(playRef.current.duration)
+      ) {
+        handleNextSong();
+      }
+    }, 100);
+    return () => clearInterval(timeCheckLoopBlackPink);
+  }, [indexSong]);
+
   //play or pause
   useEffect(() => {
     if (play === false) {
@@ -122,20 +121,38 @@ const AlanWalker = () => {
       playRef.current.pause();
     }
   }, [play, indexSong, loopSong]);
+
   return (
     <div className={cx(style.wrapper)}>
       <div className={cx(style.main)}>
-        <img src={AlanWalkerSongs[indexSong].img} alt="img" />
+        <img src={MartinGarrixSongs[indexSong].img} alt="img" />
         <div className={cx(style.intro)}>
-          <h1>{AlanWalkerSongs[indexSong].song}</h1>
-          <p>{AlanWalkerSongs[indexSong].name}</p>
+          <h1>{MartinGarrixSongs[indexSong].song}</h1>
+          <p>{MartinGarrixSongs[indexSong].name}</p>
         </div>
       </div>
-
-      <AlanWalkerLists  indexSong={indexSong} setIndexSong={setIndexSong}/>
-
-      <audio ref={playRef} src={AlanWalkerSongs[indexSong].src} />
-
+      <div className={cx(style.list)}>
+        {MartinGarrixSongs.map((x, index) => {
+          return (
+            <div
+              className={
+                indexSong === index
+                  ? cx(style.item, style.active)
+                  : cx(style.item)
+              }
+              key={index}
+              onClick={() => setIndexSong(index)}
+            >
+              <img className={cx(style.img)} src={x.img} alt={x.name} />
+              <div className={cx(style.info)}>
+                <h1>{x.song}</h1>
+                <p>{x.name}</p>
+              </div>
+            </div>
+          );
+        })}
+      </div>
+      <audio ref={playRef} src={MartinGarrixSongs[indexSong].src} />
       <div
         className={cx(style.durationBar)}
         ref={widthRef}
@@ -176,4 +193,4 @@ const AlanWalker = () => {
   );
 };
 
-export default AlanWalker;
+export default MartinGarrix;
