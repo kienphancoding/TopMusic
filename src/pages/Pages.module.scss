@@ -1,7 +1,7 @@
 .wrapper {
   margin: 0 auto;
   .list {
-    height: 275px;
+    height: calc(100vh - 330px);
     overflow: auto;
     &::-webkit-scrollbar {
       width: 10px;
@@ -29,33 +29,37 @@
       animation: spin 20s linear infinite;
     }
     h1 {
+      max-height: 90px;
+      overflow: hidden;
       font-size: 38px;
       font-weight: 600;
     }
     p {
       font-size: 27px;
       font-weight: 600;
+      max-height: 70px;
+      overflow: hidden;
     }
   }
   .menu {
     width: 100%;
     display: flex;
     justify-content: center;
-    .activeLoop{
+    .activeLoop {
       background-color: var(--color-1);
     }
   }
-  .durationBar{
-    height:10px;
-    background-color:  var(--color-3);
+  .durationBar {
+    height: 10px;
+    background-color: var(--color-3);
     border-radius: 100px;
     margin-bottom: 5px;
     margin-top: 10px;
     cursor: pointer;
-    .duration{
+    .duration {
       height: 100%;
-    border-radius: 100px;
-    background-color: var(--color-5);
+      border-radius: 100px;
+      background-color: var(--color-5);
     }
   }
   button {
@@ -66,9 +70,9 @@
     border: 3px solid var(--color-6);
     box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px,
       4px 4px 0px 0px, 5px 5px 0px 0px;
-      background-color: var(--color-3);
-      position: relative;
-      cursor: pointer;
+    background-color: var(--color-3);
+    position: relative;
+    cursor: pointer;
     &:active {
       box-shadow: 0px 0px 0px 0px;
       top: 5px;
@@ -78,14 +82,14 @@
       font-size: 20px;
     }
   }
-  .active{
+  .active {
     background-color: var(--color-3);
   }
   .item {
     display: flex;
     flex-direction: row;
-    box-shadow: var(--color-6) 0 2px 4px,
-      var(--color-6) 0 7px 13px -3px, var(--color-6) 0 -3px 0 inset;
+    box-shadow: var(--color-6) 0 2px 4px, var(--color-6) 0 7px 13px -3px,
+      var(--color-6) 0 -3px 0 inset;
     border-radius: 4px;
     position: relative;
     transition: box-shadow 0.15s, transform 0.15s;
@@ -94,26 +98,32 @@
     // padding:0 10px;
     margin: 7px 0;
     &:focus {
-      box-shadow:var(--color-6) 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px,
-        rgba(45, 35, 66, 0.3) 0 7px 13px -3px,var(--color-6) 0 -3px 0 inset;
+      box-shadow: var(--color-6) 0 0 0 1.5px inset,
+        rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px,
+        var(--color-6) 0 -3px 0 inset;
     }
     &:hover {
       box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px,
-        rgba(45, 35, 66, 0.3) 0 7px 13px -3px,var(--color-6) 0 -3px 0 inset;
+        rgba(45, 35, 66, 0.3) 0 7px 13px -3px, var(--color-6) 0 -3px 0 inset;
       transform: translateY(-2px);
     }
     &:active {
-      box-shadow:var(--color-6) 0 3px 7px inset;
+      box-shadow: var(--color-6) 0 3px 7px inset;
       transform: translateY(2px);
     }
-    h1{
-        font-size: 28px;
-        font-weight: 600;
-        text-transform: uppercase;
+    h1 {
+      overflow: hidden;
+      font-size: 28px;
+      max-height: 30px;
+      font-weight: 600;
+      text-transform: uppercase;
     }
-    p{
-        font-size: 24px;
-        font-size: 600;
+    p {
+      overflow: hidden;
+
+      max-height: 24px;
+      font-size: 24px;
+      font-size: 600;
     }
   }
   .info {
@@ -125,7 +135,7 @@
     width: var(--radius);
     height: var(--radius);
   }
-  .iconHeart{
+  .iconHeart {
     font-size: 30px;
     color: var(--color-3);
   }
@@ -136,5 +146,57 @@
   }
   100% {
     transform: rotate(360deg);
+  }
+}
+@media (max-width: 770px) {
+  .wrapper {
+    .item {
+      h1 {
+        font-size: 24px;
+      }
+      p {
+        font-size: 19px;
+      }
+    }
+
+    .list {
+      height: calc(100vh - 290px);
+    }
+
+    .main {
+      display: flex;
+
+      img {
+        --radius: 150px;
+        width: var(--radius);
+        height: var(--radius);
+      }
+      h1 {
+        max-height: 70px ;
+        font-size: 30px;
+        font-weight: 600;
+      }
+      p {
+        max-height: 60px ;
+        font-size: 23px;
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .list {
+    height: calc(100vh - 290px);
+  }
+  .wrapper {
+    .item {
+      h1 {
+        font-size: 18px;
+      }
+      p {
+        font-size: 13px;
+      }
+    }
   }
 }

@@ -287,7 +287,7 @@ const songs = [
     name: "BLACKPINK",
     src: PWF,
     nation: "KPOP",
-    type: "Viral,Pop",
+    type: "Pop",
     img: "https://i.pinimg.com/736x/01/28/d3/0128d347a6ec9a4167f61907de70a4ed.jpg",
   },
   {
@@ -303,7 +303,7 @@ const songs = [
     name: "BLACKPINK",
     src: WT,
     nation: "KPOP",
-    type: "Viral,Pop",
+    type: ",Pop",
     img: "https://i.pinimg.com/564x/c7/ad/47/c7ad47df1a47b2e6c87653456c4d946f.jpg",
   },
   {
@@ -327,7 +327,7 @@ const songs = [
     name: "BLACKPINK",
     src: LMHM,
     nation: "KPOP",
-    type: "Viral,Tiktok,Pop,Bang",
+    type: ",Tiktok,Pop",
     img: "https://i.pinimg.com/564x/4c/16/07/4c16075691435e74c462079421e82cd9.jpg",
   },
   {
@@ -335,7 +335,7 @@ const songs = [
     name: "BLACKPINK",
     src: TPG,
     nation: "KPOP",
-    type: "Viral,Tiktok,Pop,Bang",
+    type: ",Tiktok,Pop,",
     img: "https://i.pinimg.com/564x/9f/80/4f/9f804f8b6e00b6891cf959eb026945d1.jpg",
   },
   {
@@ -375,7 +375,7 @@ const songs = [
     name: "BLACKPINK",
     src: YNK,
     nation: "KPOP",
-    type: "Viral",
+    type: "",
     img: "https://i.pinimg.com/564x/3f/df/77/3fdf778f663bb81075530eb9c3cb9089.jpg",
   },
   {

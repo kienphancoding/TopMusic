@@ -5,7 +5,15 @@
   --color-4: #854442;
   --color-5: #4b3832;
   --color-6: #3c2f2f;
+  --width-sidebar:330px;
+  @media (max-width:770px) {
+    --width-sidebar:120px
+  }
+  @media (max-width:480px) {
+    --width-sidebar:60px
+  }
 }
+
 *{
   padding: 0;
   margin: 0;
