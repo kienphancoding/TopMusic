@@ -50,8 +50,8 @@ const BlackPink = () => {
     setIndexSong(indexSong===0 ?indexSong+1 :0)
   };
 
-  const blackpinkRef = useRef(1);
-  const widthRefBlackPink = useRef();
+  const pplayRef = useRef(1);
+  const widthRef = useRef();
 
   //scroll into view
   useEffect(() => {
@@ -67,18 +67,18 @@ const BlackPink = () => {
 
   //event set currtime song
   const checkWidth = (e) => {
-    let width = widthRefBlackPink.current.clientWidth;
+    let width = widthRef.current.clientWidth;
     const offset = e.nativeEvent.offsetX;
     let progress = offset / width;
-    blackpinkRef.current.currentTime = progress * blackpinkRef.current.duration;
+    pplayRef.current.currentTime = progress * pplayRef.current.duration;
   };
 
   //set width current time song
   useEffect(() => {
     const timeSetWidthBlackPink = setInterval(() => {
       document.getElementsByClassName(cx(style.duration))[0].style.width = `${
-        (Math.floor(blackpinkRef.current.currentTime) /
-          Math.floor(blackpinkRef.current.duration)) *
+        (Math.floor(pplayRef.current.currentTime) /
+          Math.floor(pplayRef.current.duration)) *
         100
       }%`;
     }, 500);
@@ -89,11 +89,11 @@ const BlackPink = () => {
   useEffect(() => {
     const timeCheckLoop = setInterval(() => {
       if (
-        Math.floor(blackpinkRef.current.currentTime) ===
-          Math.floor(blackpinkRef.current.duration) &&
+        Math.floor(pplayRef.current.currentTime) ===
+          Math.floor(pplayRef.current.duration) &&
         loopSong === true
       ) {
-        blackpinkRef.current.currentTime = 0;
+        pplayRef.current.currentTime = 0;
         setLoopSong(false);
       }
     }, 100);
@@ -105,8 +105,8 @@ const BlackPink = () => {
   useEffect(() => {
     const timeCheckLoopBlackPink = setInterval(() => {
       if (
-        Math.floor(blackpinkRef.current.currentTime) ===
-        Math.floor(blackpinkRef.current.duration)
+        Math.floor(pplayRef.current.currentTime) ===
+        Math.floor(pplayRef.current.duration)
       ) {
         handleNextSong();
       }
@@ -117,11 +117,13 @@ const BlackPink = () => {
   //play or pause
   useEffect(() => {
     if (play === false) {
-      blackpinkRef.current.play();
+      pplayRef.current.play();
     } else {
-      blackpinkRef.current.pause();
+      pplayRef.current.pause();
     }
   }, [play, indexSong, loopSong]);
+
+  document.title= `${BLACKPINK[indexSong].song}-${BLACKPINK[indexSong].name}`
 
   return (
     <div className={cx(style.wrapper)}>
@@ -135,10 +137,10 @@ const BlackPink = () => {
 
       <BlackPinkSongs indexSong={indexSong} setIndexSong={setIndexSong}/>
 
-      <audio ref={blackpinkRef} src={BLACKPINK[indexSong].src} />
+      <audio ref={pplayRef} src={BLACKPINK[indexSong].src} />
       <div
         className={cx(style.durationBar)}
-        ref={widthRefBlackPink}
+        ref={widthRef}
         onClick={checkWidth}
       >
         <div className={cx(style.duration)}></div>

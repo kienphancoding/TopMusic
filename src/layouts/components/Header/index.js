@@ -1,26 +1,33 @@
 import cx from "clsx";
 import { Link } from "react-router-dom";
 import style from "./Header.module.scss";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faChartColumn } from "@fortawesome/free-solid-svg-icons";
 
 const Header = () => {
+  const menu =[ 
+    {path:"/EDM",name:"EDM"},
+    {path:"/Tiktok",name:"Tiktok"},
+    {path:"/Ballad",name:"Ballad"},
+    {path:"/Viral",name:"Viral"},
+    {path:"/Bang",name:"Bang"},
+    {path:"/KhongLoi",name:"Không lời"},
+    {path:"/Chill",name:"Chill"},
+    {path:"/CoDien",name:"Cổ điển"},
+  ]
   return (
     <div className={cx(style.wrapper)}>
       <div className={cx(style.logo)}>
-        <Link to="/">TopMusic</Link>
+        <Link  to="/">TopMusic</Link>
       </div>
 
       <div className={cx(style.menu)}>
-        <Link to="/statics" className={cx(style.statics)}>
-          <FontAwesomeIcon icon={faChartColumn} />
-        </Link>
-        <Link to="/top100" className={cx(style.statics)}>
-          Top 100
-        </Link>
-        <Link to="/top100" className={cx(style.statics)}>
-          Icon tiktok
-        </Link>
+        
+        {menu.map((x,index)=>{
+          return(
+            <Link style={window.location.pathname===x.path?{backgroundColor:`var(--color-3)`}:{}} key={index} to={x.path} >
+              {x.name}
+            </Link>
+          )
+        })}
       </div>
     </div>
   );

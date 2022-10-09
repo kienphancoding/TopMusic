@@ -6,17 +6,39 @@
   width: 100%;
   align-items: center;
   justify-content: space-between;
-  font-size: 30px;
+  font-size: 25px;
   font-weight: 600;
   background-color: var(--color-2);
   padding: 10px 30px;
   .logo {
     text-shadow: 3px 0px 7px rgba(81, 67, 21, 0.8),
       -3px 0px 7px rgba(81, 67, 21, 0.8), 0px 4px 7px rgba(81, 67, 21, 0.8);
+    font-size: 30px;
   }
   .menu {
     a {
-      margin-left: 10px;
+      box-shadow: var(--color-6) 0 2px 4px, var(--color-6) 0 7px 13px -3px,
+        var(--color-6) 0 -3px 0 inset;
+      border-radius: 4px;
+      position: relative;
+      transition: box-shadow 0.15s, transform 0.15s;
+      touch-action: manipulation;
+      will-change: box-shadow, transform;
+      padding: 10px;
+      &:focus {
+        box-shadow: var(--color-6) 0 0 0 1.5px inset,
+          rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px,
+          var(--color-6) 0 -3px 0 inset;
+      }
+      &:hover {
+        box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px,
+          rgba(45, 35, 66, 0.3) 0 7px 13px -3px, var(--color-6) 0 -3px 0 inset;
+        transform: translateY(-2px);
+      }
+      &:active {
+        box-shadow: var(--color-6) 0 3px 7px inset;
+        transform: translateY(2px);
+      }
     }
   }
 }
