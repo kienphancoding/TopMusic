@@ -1,6 +1,5 @@
 import cx from "clsx";
 import { useRef, useEffect, useState } from "react";
-import { AlanWalkerSongs } from "../../songs";
 import style from "../Pages.module.scss";
 import {
   faPlay,
@@ -11,12 +10,17 @@ import {
   faShuffle,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import AlanWalkerLists from "./AlanWalker"
-
+import ListSongs from "../../layouts/components/ListSongs";
+import {songs} from "../../songs"
 const AlanWalker = () => {
+  const name="Alan Walker"
   const [play, setPlay] = useState(true); // true la hien nut play
   const [indexSong, setIndexSong] = useState(0); // vi tri hien tai cua bai hat
   const [loopSong, setLoopSong] = useState(false); // lap lai bai hat
+
+  const NewSongs = songs.filter((x) => {
+    return x.name.includes(name);
+  });
 
   const handlePlay = () => {
     setPlay(false);
@@ -27,11 +31,11 @@ const AlanWalker = () => {
   };
 
   const handleNextSong = () => {
-    setIndexSong(indexSong === AlanWalkerSongs.length - 1 ? 0 : indexSong + 1);
+    setIndexSong(indexSong === NewSongs.length - 1 ? 0 : indexSong + 1);
   };
 
   const handlePrevSong = () => {
-    setIndexSong(indexSong === 0 ? AlanWalkerSongs.length - 1 : indexSong - 1);
+    setIndexSong(indexSong === 0 ? NewSongs.length - 1 : indexSong - 1);
   };
 
   const handleLoopSong = () => {
@@ -39,18 +43,18 @@ const AlanWalker = () => {
   };
 
   const handleRandomSong = () => {
-    for (let i = 0; i < AlanWalkerSongs.length; i++) {
-      let random = Math.floor(Math.random() * AlanWalkerSongs.length);
+    for (let i = 0; i < songs.length; i++) {
+      let random = Math.floor(Math.random() * songs.length);
       let temp;
-      temp = AlanWalkerSongs[i];
-      AlanWalkerSongs[i] = AlanWalkerSongs[random];
-      AlanWalkerSongs[random] = temp;
+      temp = songs[i];
+      songs[i] = songs[random];
+      songs[random] = temp;
     }
-    setIndexSong(indexSong===0 ?indexSong+1 :0)
+    setIndexSong(indexSong === 0 ? indexSong + 1 : 0);
   };
 
-  const playRef = useRef(1);
-  const widthRef = useRef();
+  const noRef = useRef(1);
+  const RefWidth = useRef();
 
   //scroll into view
   useEffect(() => {
@@ -60,24 +64,24 @@ const AlanWalker = () => {
         block: "end",
         inline: "nearest",
       });
-    }, 500);
+    }, 300);
     return () => clearTimeout(timeScrollIntoView);
   }, [indexSong]);
 
   //event set currtime song
   const checkWidth = (e) => {
-    let width = widthRef.current.clientWidth;
+    let width = RefWidth.current.clientWidth;
     const offset = e.nativeEvent.offsetX;
     let progress = offset / width;
-    playRef.current.currentTime = progress * playRef.current.duration;
+    noRef.current.currentTime = progress * noRef.current.duration;
   };
 
   //set width current time song
   useEffect(() => {
     const timeSetWidth = setInterval(() => {
       document.getElementsByClassName(cx(style.duration))[0].style.width = `${
-        (Math.floor(playRef.current.currentTime) /
-          Math.floor(playRef.current.duration)) *
+        (Math.floor(noRef.current.currentTime) /
+          Math.floor(noRef.current.duration)) *
         100
       }%`;
     }, 500);
@@ -88,8 +92,8 @@ const AlanWalker = () => {
   useEffect(() => {
     const timeCheckLoop = setInterval(() => {
       if (
-        Math.floor(playRef.current.currentTime) ===
-        Math.floor(playRef.current.duration)
+        Math.floor(noRef.current.currentTime) ===
+        Math.floor(noRef.current.duration)
       ) {
         handleNextSong();
       }
@@ -102,43 +106,45 @@ const AlanWalker = () => {
   useEffect(() => {
     const timeCheckLoop = setInterval(() => {
       if (
-        Math.floor(playRef.current.currentTime) ===
-          Math.floor(playRef.current.duration) &&
+        Math.floor(noRef.current.currentTime) ===
+          Math.floor(noRef.current.duration) &&
         loopSong === true
       ) {
-        playRef.current.currentTime = 0;
+        noRef.current.currentTime = 0;
         setLoopSong(false);
       }
     }, 100);
 
     return () => clearInterval(timeCheckLoop);
-  }, [loopSong]);
+  }, [loopSong, indexSong]);
 
   //play or pause
   useEffect(() => {
     if (play === false) {
-      playRef.current.play();
+      noRef.current.play();
     } else {
-      playRef.current.pause();
+      noRef.current.pause();
     }
   }, [play, indexSong, loopSong]);
+
+  document.title = `${NewSongs[indexSong].song} - ${NewSongs[indexSong].name}`;
   return (
     <div className={cx(style.wrapper)}>
       <div className={cx(style.main)}>
-        <img src={AlanWalkerSongs[indexSong].img} alt="img" />
+        <img src={NewSongs[indexSong].img} alt="img" />
         <div className={cx(style.intro)}>
-          <h1>{AlanWalkerSongs[indexSong].song}</h1>
-          <p>{AlanWalkerSongs[indexSong].name}</p>
+          <h1>{NewSongs[indexSong].song}</h1>
+          <p>{NewSongs[indexSong].name}</p>
         </div>
       </div>
 
-      <AlanWalkerLists  indexSong={indexSong} setIndexSong={setIndexSong}/>
+      <ListSongs indexSong={indexSong} setIndexSong={setIndexSong} name={name}/>
 
-      <audio ref={playRef} src={AlanWalkerSongs[indexSong].src} />
+      <audio ref={noRef} src={NewSongs[indexSong].src} />
 
       <div
         className={cx(style.durationBar)}
-        ref={widthRef}
+        ref={RefWidth}
         onClick={checkWidth}
       >
         <div className={cx(style.duration)}></div>
