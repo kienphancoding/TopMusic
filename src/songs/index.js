@@ -51,56 +51,408 @@ import OMN from "../assets/Maroon5/y2mate.com - Maroon 5  One More Night Officia
 import SUGAR from "../assets/Maroon5/y2mate.com - Maroon 5  Sugar Lyrics.mp3";
 import WLD from "../assets/Maroon5/y2mate.com - What Lovers Do  Maroon 5  Elemer Remix Lyrics  Vietsub .mp3";
 import BM from "../assets/Maroon5/y2mate.com - 마룬파이브 신곡 Beautiful Mistakes  Maroon 5 Megan Thee Stallion female cover.mp3";
-import Rings from "../assets/ArianaGrande/y2mate.com - Ariana Grande  7 Rings Lyrics.mp3"
-import Add from "../assets/ArianaGrande/y2mate.com - Ariana Grande  3435 Lyrics.mp3"
-import Positions from "../assets/ArianaGrande/y2mate.com - Ariana Grande  positions Lyrics.mp3"
-import SideToSide from "../assets/ArianaGrande/y2mate.com - Ariana grande  side to side lyrics.mp3"
-import BangBang from "../assets/ArianaGrande/y2mate.com - Jessie J Ariana Grande Nicki Minaj  Bang Bang  Lyrics.mp3"
-import TheNights from "../assets/Avicii/y2mate.com - Avicii  The Nights Lyrics.mp3"
-import WTF from "../assets/Avicii/y2mate.com - Avicii  Waiting For Love Lyric Video.mp3"
-import WMU from "../assets/Avicii/y2mate.com - Avicii  Wake Me Up Lyric Video.mp3"
-import L from "../assets/Avicii/y2mate.com - Levels  Avicii Lyrics .mp3"
+import Rings from "../assets/ArianaGrande/y2mate.com - Ariana Grande  7 Rings Lyrics.mp3";
+import Add from "../assets/ArianaGrande/y2mate.com - Ariana Grande  3435 Lyrics.mp3";
+import Positions from "../assets/ArianaGrande/y2mate.com - Ariana Grande  positions Lyrics.mp3";
+import SideToSide from "../assets/ArianaGrande/y2mate.com - Ariana grande  side to side lyrics.mp3";
+import BangBang from "../assets/ArianaGrande/y2mate.com - Jessie J Ariana Grande Nicki Minaj  Bang Bang  Lyrics.mp3";
+import TheNights from "../assets/Avicii/y2mate.com - Avicii  The Nights Lyrics.mp3";
+import WTF from "../assets/Avicii/y2mate.com - Avicii  Waiting For Love Lyric Video.mp3";
+import WMU from "../assets/Avicii/y2mate.com - Avicii  Wake Me Up Lyric Video.mp3";
+import L from "../assets/Avicii/y2mate.com - Levels  Avicii Lyrics .mp3";
 
-import Song1 from "../assets/BrunoMars/y2mate.com - BoB  Nothin On You feat Bruno Mars Official Video.mp3"
-import Song2 from "../assets/BrunoMars/y2mate.com - Bruno Mars  Marry You Official Lyric Video.mp3"
-import Song3 from "../assets/BrunoMars/y2mate.com - Bruno Mars  Talking To The Moon Lyrics.mp3"
-import Song4 from "../assets/BrunoMars/y2mate.com - Bruno Mars  Thats What I Like Official Music Video.mp3"
-import Song5 from "../assets/BrunoMars/y2mate.com - It Will Rain   cover Eltasya Natasha lirik.mp3"
-import Song6 from "../assets/BrunoMars/y2mate.com - Lighters TikTok Version  Bruno Mars ft Bad Evils.mp3"
-import Song7 from "../assets/BrunoMars/y2mate.com - LyricsVietsub Count On Me  Bruno Mars  Connie Talbot Cover.mp3"
-import Song8 from "../assets/BrunoMars/y2mate.com - Mark Ronson  Uptown Funk Official Video ft Bruno Mars.mp3"
-import Song9 from "../assets/BrunoMars/y2mate.com - Vietsub Just the Way You Are  Bruno Mars  Lyrics Video.mp3"
+import Song1 from "../assets/BrunoMars/y2mate.com - BoB  Nothin On You feat Bruno Mars Official Video.mp3";
+import Song2 from "../assets/BrunoMars/y2mate.com - Bruno Mars  Marry You Official Lyric Video.mp3";
+import Song3 from "../assets/BrunoMars/y2mate.com - Bruno Mars  Talking To The Moon Lyrics.mp3";
+import Song4 from "../assets/BrunoMars/y2mate.com - Bruno Mars  Thats What I Like Official Music Video.mp3";
+import Song5 from "../assets/BrunoMars/y2mate.com - It Will Rain   cover Eltasya Natasha lirik.mp3";
+import Song6 from "../assets/BrunoMars/y2mate.com - Lighters TikTok Version  Bruno Mars ft Bad Evils.mp3";
+import Song7 from "../assets/BrunoMars/y2mate.com - LyricsVietsub Count On Me  Bruno Mars  Connie Talbot Cover.mp3";
+import Song8 from "../assets/BrunoMars/y2mate.com - Mark Ronson  Uptown Funk Official Video ft Bruno Mars.mp3";
+import Song9 from "../assets/BrunoMars/y2mate.com - Vietsub Just the Way You Are  Bruno Mars  Lyrics Video.mp3";
 
-import Song10 from "../assets/CalvinHarris/y2mate.com - calvin harris  disciples  how deep is your love tiktok song lyrics  Is it like the ocean.mp3"
-import Song11 from "../assets/CalvinHarris/y2mate.com - Calvin Harris Dua Lipa  One Kiss Lyrics.mp3"
-import Song12 from "../assets/CalvinHarris/y2mate.com - I NEED YOUR LOVE   Vietsub by PASAL.mp3"
-import Song13 from "../assets/CalvinHarris/y2mate.com - Summer  Calvin Harris Lyrics .mp3.webm"
-import Song14 from "../assets/CalvinHarris/y2mate.com - y todo el mundo la mira pero ella te mira a ti .mp3"
+import Song10 from "../assets/CalvinHarris/y2mate.com - calvin harris  disciples  how deep is your love tiktok song lyrics  Is it like the ocean.mp3";
+import Song11 from "../assets/CalvinHarris/y2mate.com - Calvin Harris Dua Lipa  One Kiss Lyrics.mp3";
+import Song12 from "../assets/CalvinHarris/y2mate.com - I NEED YOUR LOVE   Vietsub by PASAL.mp3";
+import Song13 from "../assets/CalvinHarris/y2mate.com - Summer  Calvin Harris Lyrics .mp3.webm";
+import Song14 from "../assets/CalvinHarris/y2mate.com - y todo el mundo la mira pero ella te mira a ti .mp3";
 
-import Song15 from "../assets/CharliePuth/y2mate.com - Charlie Puth  Cheating on You Lyrics.mp3"
-import Song16 from "../assets/CharliePuth/y2mate.com - Charlie Puth  Left And Right feat Jung Kook of BTS Official Video.mp3"
-import Song17 from "../assets/CharliePuth/y2mate.com - Charlie Puth  One Call Away Official Audio.mp3"
-import Song18 from "../assets/CharliePuth/y2mate.com - Charlie Puth  We Dont Talk Anymore feat Selena Gomez Official Video.mp3"
-import Song19 from "../assets/CharliePuth/y2mate.com - Vietsub  Lyrics Attention  Charlie Puth.mp3"
-import Song20 from "../assets/CharliePuth/y2mate.com - Vietsub  See You Again  Wiz Khalifa Charlie Puth  Fast And Furious 7 OST  Lyrics Video.mp3"
+import Song15 from "../assets/CharliePuth/y2mate.com - Charlie Puth  Cheating on You Lyrics.mp3";
+import Song16 from "../assets/CharliePuth/y2mate.com - Charlie Puth  Left And Right feat Jung Kook of BTS Official Video.mp3";
+import Song17 from "../assets/CharliePuth/y2mate.com - Charlie Puth  One Call Away Official Audio.mp3";
+import Song18 from "../assets/CharliePuth/y2mate.com - Charlie Puth  We Dont Talk Anymore feat Selena Gomez Official Video.mp3";
+import Song19 from "../assets/CharliePuth/y2mate.com - Vietsub  Lyrics Attention  Charlie Puth.mp3";
+import Song20 from "../assets/CharliePuth/y2mate.com - Vietsub  See You Again  Wiz Khalifa Charlie Puth  Fast And Furious 7 OST  Lyrics Video.mp3";
 
-import Song21 from "../assets/Coldplay/y2mate.com - Coldplay  Hymn For The Weekend Lyrics.mp3"
-import Song22 from "../assets/Coldplay/y2mate.com - Viva la vida  Coldplay  Lyrics  vietsub .mp3"
+import Song21 from "../assets/Coldplay/y2mate.com - Coldplay  Hymn For The Weekend Lyrics.mp3";
+import Song22 from "../assets/Coldplay/y2mate.com - Viva la vida  Coldplay  Lyrics  vietsub .mp3";
 
-import Song23 from "../assets/DJSnake/y2mate.com - Dillon Francis DJ Snake  Get Low Official Music Video.mp3"
-import Song24 from "../assets/DJSnake/y2mate.com - DJ Snake  Let Me Love You ft Justin Bieber Official Video.mp3.webm"
-import Song25 from "../assets/DJSnake/y2mate.com - DJ Snake  Taki Taki ft Selena Gomez Ozuna Cardi B Official Music Video.mp3"
-import Song26 from "../assets/DJSnake/y2mate.com - DJ Snake Lil Jon  Turn Down for What.mp3.webm"
-import Song27 from "../assets/DJSnake/y2mate.com - Major Lazer  DJ Snake  Lean On feat MØ Official Music Video.mp3"
+import Song23 from "../assets/DJSnake/y2mate.com - Dillon Francis DJ Snake  Get Low Official Music Video.mp3";
+import Song24 from "../assets/DJSnake/y2mate.com - DJ Snake  Let Me Love You ft Justin Bieber Official Video.mp3.webm";
+import Song25 from "../assets/DJSnake/y2mate.com - DJ Snake  Taki Taki ft Selena Gomez Ozuna Cardi B Official Music Video.mp3";
+import Song26 from "../assets/DJSnake/y2mate.com - DJ Snake Lil Jon  Turn Down for What.mp3.webm";
+import Song27 from "../assets/DJSnake/y2mate.com - Major Lazer  DJ Snake  Lean On feat MØ Official Music Video.mp3";
 
-import Song28 from "../assets/DuaLipa/y2mate.com - Dua Lipa  Dont Start Now Official Music Video.mp3"
-import Song32 from "../assets/DuaLipa/y2mate.com - Dua Lipa  Levitating Feat DaBaby Lyrics.mp3"
-import Song31 from "../assets/DuaLipa/y2mate.com - Megan Thee Stallion Dua Lipa  Sweetest Pie Lyrics.mp3"
-import Song30 from "../assets/DuaLipa/y2mate.com - Sean Paul Dua Lipa  No Lie.mp3"
-import Song29 from "../assets/DuaLipa/y2mate.com - Silk City Dua Lipa  Electricity Lyrics ft Diplo Mark Ronson.mp3.webm"
+import Song28 from "../assets/DuaLipa/y2mate.com - Dua Lipa  Dont Start Now Official Music Video.mp3";
+import Song32 from "../assets/DuaLipa/y2mate.com - Dua Lipa  Levitating Feat DaBaby Lyrics.mp3";
+import Song31 from "../assets/DuaLipa/y2mate.com - Megan Thee Stallion Dua Lipa  Sweetest Pie Lyrics.mp3";
+import Song30 from "../assets/DuaLipa/y2mate.com - Sean Paul Dua Lipa  No Lie.mp3";
+import Song29 from "../assets/DuaLipa/y2mate.com - Silk City Dua Lipa  Electricity Lyrics ft Diplo Mark Ronson.mp3.webm";
+
+import Song40 from "../assets/EdSheeran/y2mate.com - Ed Sheeran  Justin Bieber  I Dont Care Official Lyric Video.mp3";
+import Song41 from "../assets/EdSheeran/y2mate.com - Ed Sheeran  Perfect Lyrics.mp3";
+import Song42 from "../assets/EdSheeran/y2mate.com - Ed Sheeran  Photograph Lyrics.mp3";
+import Song43 from "../assets/EdSheeran/y2mate.com - Ed Sheeran  Shape Of You Lyrics.mp3";
+import Song44 from "../assets/EdSheeran/y2mate.com - Female ver Ed Sheeran  Bad Habits cover by TIN 빌보드Billboard노래추천  Coversong  Pop.mp3";
+
+import Song50 from "../assets/Eminem/y2mate.com - Eminem  Godzilla ft Juice WRLD Directed by Cole Bennett.mp3"
+import Song51 from "../assets/Eminem/y2mate.com - Eminem  Love The Way You Lie ft Rihanna.mp3"
+import Song52 from "../assets/Eminem/y2mate.com - Eminem  Not Afraid Official Video.mp3"
+import Song53 from "../assets/Eminem/y2mate.com - Eminem  Rap God Explicit.mp3"
+
+import Song63 from "../assets/Zedd/y2mate.com - Zedd  Beautiful Now ft Jon Bellion Official Music Video.mp3"
+import Song64 from "../assets/Zedd/y2mate.com - Zedd  Clarity ft Foxes Official Music Video.mp3"
+import Song65 from "../assets/Zedd/y2mate.com - Zedd Alessia Cara  Stay Official Music Video.mp3"
+import Song66 from "../assets/Zedd/y2mate.com - Zedd Maren Morris Grey  The Middle Official Music Video.mp3"
+
+import Song70 from "../assets/ImagineDragons/y2mate.com - Imagine Dragons  Believer Lyrics.mp3"
+import Song71 from "../assets/ImagineDragons/y2mate.com - Imagine Dragons  Demons Lyric Video.mp3"
+import Song72 from "../assets/ImagineDragons/y2mate.com - Imagine Dragons  Thunder.mp3"
+import Song73 from "../assets/ImagineDragons/y2mate.com - LyricsVietsub  Enemy  Imagine Dragons x JID.mp3"
+import Song74 from "../assets/ImagineDragons/y2mate.com - Vietsub  Edit Bad Liar  Imagine Dragons live.mp3"
+
+import Song80 from "../assets/TaylorSwift/y2mate.com - Shake It Off  Taylor Swift Lyrics .mp3"
+import Song81 from "../assets/TaylorSwift/y2mate.com - Taylor Swift  Bad Blood Audio.mp3"
+import Song82 from "../assets/TaylorSwift/y2mate.com - Taylor Swift  Blank Space Lyrics.mp3"
+import Song83 from "../assets/TaylorSwift/y2mate.com - Taylor Swift  Look What You Made Me Do Lyric Video.mp3"
+import Song84 from "../assets/TaylorSwift/y2mate.com - Taylor Swift  Love Story Lyrics.mp3.webm"
+import Song85 from "../assets/TaylorSwift/y2mate.com - Taylor Swift  Style Lyrics.mp3"
+import Song86 from "../assets/TaylorSwift/y2mate.com - ZAYN Taylor Swift  I Dont Wanna Live Forever Lyrics.mp3"
+
+import Rihanna1 from "../assets/Rihanna/y2mate.com - Umbrella  Ember Island  Matte Remix Lyrics  Vietsub .mp3"
+
+import Song90 from "../assets/ShawnMendes/y2mate.com - Shawn Mendes  Theres Nothing Holdin Me Back Lyrics.mp3"
+import Song91 from "../assets/ShawnMendes/y2mate.com - Shawn Mendes Camila Cabello  Señorita Lyrics.mp3"
+import Song92 from "../assets/ShawnMendes/y2mate.com - Treat You Better Shawn Mendes Lyrics.mp3"
+
+import Song100 from "../assets/JustinBeiber/y2mate.com - As Long As You Love Me  Justin Bieber ft Big Sean  Official Lyrics.mp3"
+import Song101 from "../assets/JustinBeiber/y2mate.com - Dan  Shay Justin Bieber  10000 Hours Lyrics.mp3"
+import Song102 from "../assets/JustinBeiber/y2mate.com - Justin Bieber  Baby ft Ludacris Lyrics Video.mp3"
+import Song103 from "../assets/JustinBeiber/y2mate.com - Justin Bieber  Intentions Lyrics ft Quavo.mp3"
+import Song104 from "../assets/JustinBeiber/y2mate.com - Justin Bieber  Peaches Lyrics ft Daniel Caesar Giveon.mp3"
+import Song105 from "../assets/JustinBeiber/y2mate.com - Justin Bieber  What Do You Mean Lyrics.mp3"
+import Song106 from "../assets/JustinBeiber/y2mate.com - Justin Bieber  Yummy Lyrics.mp3"
+import Song107 from "../assets/JustinBeiber/y2mate.com - LyricsVietsub Love Yourself  Justin Bieber.mp3"
+import Song108 from "../assets/JustinBeiber/y2mate.com - The Kid LAROI Justin Bieber  Stay Lyrics.mp3"
 
 
 const songs = [
+  {
+    song: "Beautiful now",
+    name: "Zedd",
+    src: Song63,
+    nation: "US UK",
+    type: "Pop",
+    img: "https://i.pinimg.com/564x/15/73/cd/1573cdc69ea7bc0f9fe3d8ebfa76dc69.jpg",
+  },
+  {
+    song: "Stay",
+    name: "Zedd",
+    src: Song65,
+    nation: "US UK",
+    type: "Pop,Viral",
+    img: "https://i.pinimg.com/564x/66/08/1a/66081a6f111231b652bc22fdfa8e5211.jpg",
+  },
+  {
+    song: "Foxes",
+    name: "Zedd",
+    src: Song64,
+    nation: "US UK",
+    type: "Pop",
+    img: "https://i.pinimg.com/564x/7e/61/ad/7e61ad2fc9ad3b78135bfa0db25dcb95.jpg",
+  },
+  {
+    song: "The middle",
+    name: "Zedd",
+    src: Song66,
+    nation: "US UK",
+    type: "Pop",
+    img: "https://i.pinimg.com/564x/19/38/51/1938511aacdb443ff0869aab446df2f0.jpg",
+  },
+  {
+    song: "Look What You Made Me Do",
+    name: "Taylor Swift",
+    src: Song83,
+    nation: "US UK",
+    type: "Pop",
+    img: "https://i.pinimg.com/564x/c0/91/f2/c091f23ea45275bd9a8d8bf536a6290a.jpg",
+  },
+  {
+    song: "Blank Space",
+    name: "Taylor Swift",
+    src: Song82,
+    nation: "US UK",
+    type: "Pop",
+    img: "https://i.pinimg.com/736x/4a/f5/67/4af567118d0b54b56ae6c688ae93a175.jpg",
+  },
+  {
+    song: "Shake It Off",
+    name: "Taylor Swift",
+    src: Song80,
+    nation: "US UK",
+    type: "Pop",
+    img: "https://i.pinimg.com/564x/e9/e3/31/e9e331ee4d060a3f1742f7147b8d8fc3.jpg",
+  },
+  {
+    song: "Bad blood",
+    name: "Taylor Swift",
+    src: Song81,
+    nation: "US UK",
+    type: "Pop",
+    img: "https://i.pinimg.com/564x/f2/97/9d/f2979d592ee5cf6550d8e51df5786c83.jpg",
+  },
+  {
+    song: "Love story",
+    name: "Taylor Swift  - cover",
+    src: Song84,
+    nation: "US UK",
+    type: "Pop",
+    img: "https://i.pinimg.com/564x/a9/ea/ca/a9eaca92e3c96fbeae7e3b07ada4a99d.jpg",
+  },
+  {
+    song: "I don't wanna live forever",
+    name: "Taylor Swift",
+    src: Song86,
+    nation: "US UK",
+    type: "Pop",
+    img: "https://i.pinimg.com/736x/62/3c/81/623c81ec556b325d54ab2cb03ce05742.jpg",
+  },
+  {
+    song: "Style",
+    name: "Taylor Swift",
+    src: Song85,
+    nation: "US UK",
+    type: "Pop",
+    img: "https://i.pinimg.com/564x/07/d0/5d/07d05d53b4f8ed232d6192cd6ff4fc0e.jpg",
+  },
+  {
+    song: "There's Nothing Holdin' Me Back",
+    name: "Shawn Mendes",
+    src: Song90,
+    nation: "US UK",
+    type: "Pop",
+    img: "https://i.pinimg.com/564x/89/92/56/899256088d8a7f4d1e251a3a9066cd2a.jpg",
+  },
+  {
+    song: "Senorita",
+    name: "Shawn Mendes,Camila",
+    src: Song91,
+    nation: "US UK",
+    type: "Pop",
+    img: "https://i.pinimg.com/564x/de/3a/5d/de3a5d4e09a1afa0ad19addd4504caef.jpg",
+  },
+  {
+    song: "Treat you better",
+    name: "Shawn Mendes",
+    src: Song92,
+    nation: "US UK",
+    type: "Pop",
+    img: "https://i.pinimg.com/564x/57/6f/67/576f67ce843426cdb479b3ed2f8af3e2.jpg",
+  },
+  {
+    song: "Umbrella Version tiktok",
+    name: "Rihanna",
+    src: Rihanna1,
+    nation: "US UK",
+    type: "Pop,EDM",
+    img: "https://i.pinimg.com/564x/4f/ce/5b/4fce5be76eb4f26ec8f0524396c46124.jpg",
+  },
+  {
+    song: "Baby",
+    name: "Justin Beiber",
+    src: Song102,
+    nation: "US UK",
+    type: "Pop",
+    img: "https://i.pinimg.com/564x/0a/62/3e/0a623eade12092cc626ffac0d2ada025.jpg",
+  },
+  {
+    song: "Love yourself",
+    name: "Justin Beiber",
+    src: Song107,
+    nation: "US UK",
+    type: "Pop",
+    img: "https://i.pinimg.com/564x/6b/7c/4d/6b7c4ddecccbc5c53d42e9b3b183a97b.jpg",
+  },
+  {
+    song: "Stay",
+    name: "Justin Beiber ft The Kid LAROI",
+    src: Song108,
+    nation: "US UK",
+    type: "Pop",
+    img: "https://i.pinimg.com/564x/14/e8/b3/14e8b39e55e8b7d4d422527759daa5ef.jpg",
+  },
+  {
+    song: "Intention",
+    name: "Justin Beiber",
+    src: Song103,
+    nation: "US UK",
+    type: "Pop",
+    img: "https://i.pinimg.com/736x/cd/e9/c9/cde9c991851241e186f6192a3ac23ccb.jpg",
+  },
+  {
+    song: "Peaches",
+    name: "Justin Beiber",
+    src: Song104,
+    nation: "US UK",
+    type: "Pop",
+    img: "https://i.pinimg.com/564x/c9/e6/38/c9e63862eaf5a6f5a32ab84bee73e3db.jpg",
+  },
+  {
+    song: "Yummy",
+    name: "Justin Beiber",
+    src: Song106,
+    nation: "US UK",
+    type: "Pop",
+    img: "https://i.pinimg.com/564x/8e/a8/1f/8ea81f106de5a588deac17b30e456f3c.jpg",
+  },
+  {
+    song: "10000 hours",
+    name: "Justin Beiber",
+    src: Song101,
+    nation: "US UK",
+    type: "Pop",
+    img: "https://i.pinimg.com/564x/f2/71/d1/f271d15b93c70e1e45c71f375bf932e1.jpg",
+  },
+  {
+    song: "What Do You Mean",
+    name: "Justin Beiber",
+    src: Song105,
+    nation: "US UK",
+    type: "Pop",
+    img: "https://i.pinimg.com/736x/a7/79/a1/a779a14a6bfbca52fbd9d28aca4c85c2.jpg",
+  },
+  {
+    song: "As Long As You Love Me",
+    name: "Justin Beiber",
+    src: Song100,
+    nation: "US UK",
+    type: "Pop",
+    img: "https://i.pinimg.com/564x/40/d2/c7/40d2c7a5b40dfe9102fd4e3c587854a4.jpg",
+  },
+
+  {
+    song: "Bad liar",
+    name: "Imagine Dragons",
+    src: Song74,
+    nation: "US UK",
+    type: "Pop",
+    img: "https://i.pinimg.com/564x/21/a1/fe/21a1fe62f89b51946c4dd0717832ed5d.jpg",
+  },
+  {
+    song: "Believer",
+    name: "Imagine Dragons",
+    src: Song70,
+    nation: "US UK",
+    type: "Pop",
+    img: "https://i.pinimg.com/564x/70/6c/13/706c13891c91958728d6a5cfab903619.jpg",
+  },
+  {
+    song: "Demons",
+    name: "Imagine Dragons",
+    src: Song71,
+    nation: "US UK",
+    type: "Pop",
+    img: "https://i.pinimg.com/564x/f8/18/f7/f818f70c8ad68579d20c077e9ef9d4aa.jpg",
+  },
+  {
+    song: "Enemy",
+    name: "Imagine Dragons",
+    src: Song73,
+    nation: "US UK",
+    type: "Pop",
+    img: "https://i.pinimg.com/564x/4e/bc/ee/4ebcee51bceb000b75d1b2c64e3e0079.jpg",
+  },
+  {
+    song: "Thunder",
+    name: "Imagine Dragons",
+    src: Song72,
+    nation: "US UK",
+    type: "Pop",
+    img: "https://i.pinimg.com/564x/e0/0e/87/e00e87d3c31a3b249ecff114c758126c.jpg",
+  },
+  {
+    song: "Rap god",
+    name: "Eminem",
+    src: Song53,
+    nation: "US UK",
+    type: "Rap",
+    img: "https://i.pinimg.com/564x/76/db/ff/76dbffd42e86b6923b09048eeea5b10e.jpg",
+  },
+  {
+    song: "Not afraid",
+    name: "Eminem",
+    src: Song52,
+    nation: "US UK",
+    type: "Rap",
+    img: "https://i.pinimg.com/736x/54/6a/40/546a406ef7d4cc4129e1075276c6fef0.jpg",
+  },
+  {
+    song: "Godzila",
+    name: "Eminem",
+    src: Song50,
+    nation: "US UK",
+    type: "Rap",
+    img: "https://i.pinimg.com/564x/bb/53/fd/bb53fd19fcb02bc558567e95609851c9.jpg",
+  },
+  {
+    song: "Love The Way You Lie",
+    name: "Eminem  ft Rihanna",
+    src: Song51,
+    nation: "US UK",
+    type: "Ballad",
+    img: "https://i.pinimg.com/564x/24/35/78/24357812a4ec9b2d5836e62fe560dc7e.jpg",
+  },
+
+  {
+    song: "Shape of you",
+    name: "Ed Sheeran",
+    src: Song43,
+    nation: "US UK",
+    type: "Pop",
+    img: "https://i.pinimg.com/736x/c0/ad/fd/c0adfd930eefade48c7b2d18c2f69a40.jpg",
+  },
+  {
+    song: "Perfect",
+    name: "Ed Sheeran",
+    src: Song41,
+    nation: "US UK",
+    type: "Ballah",
+    img: "https://i.pinimg.com/736x/d4/a8/b3/d4a8b3a33cc5fd7f0ed017182dd8ba85.jpg",
+  },
+  {
+    song: "Photograph",
+    name: "Ed Sheeran",
+    src: Song42,
+    nation: "US UK",
+    type: "Ballah",
+    img: "https://i.pinimg.com/564x/c8/7a/24/c87a24669a8766a5d98385e3adb52644.jpg",
+  },
+  {
+    song: "Bad habits",
+    name: "Ed Sheeran(cover by TIN)",
+    src: Song44,
+    nation: "US UK",
+    type: "Ballah",
+    img: "https://i.pinimg.com/564x/a9/cd/8e/a9cd8e396760c854907dc19cfd184d87.jpg",
+  },
+  {
+    song: "I don't care",
+    name: "Ed Sheeran ft Justin Beiber",
+    src: Song40,
+    nation: "US UK",
+    type: "Pop",
+    img: "https://i.pinimg.com/736x/8b/b4/59/8bb459989ebdecf70a86de564bb924f4.jpg",
+  },
   {
     song: "Sweetest Pie",
     name: "Dua Lipa,Megan Thee Stallion",
@@ -108,28 +460,32 @@ const songs = [
     nation: "US UK",
     type: "Pop",
     img: "https://i.pinimg.com/564x/3b/c6/55/3bc655769d7e4ec2ed77fb873386e671.jpg",
-  },{
+  },
+  {
     song: "Don't Start Now",
     name: "Dua Lipa",
     src: Song28,
     nation: "US UK",
     type: "Pop",
     img: "https://i.pinimg.com/736x/e5/68/0a/e5680a8f70c2de8dbd635bf053f3ed71.jpg",
-  },{
+  },
+  {
     song: "Levitating Featuring DaBaby",
     name: "Dua Lipa",
     src: Song32,
     nation: "US UK",
     type: "Pop",
     img: "https://i.pinimg.com/564x/78/03/48/78034813047797fb6752629f7c11f4ed.jpg",
-  },{
+  },
+  {
     song: "Electricity ",
     name: "Silk City, Dua Lipa",
     src: Song29,
     nation: "US UK",
     type: "Pop",
     img: "https://i.pinimg.com/736x/fb/87/c9/fb87c9d52672c222fb9279f68c27881d.jpg",
-  },{
+  },
+  {
     song: "No lie",
     name: "Sean Paul, Dua Lipa",
     src: Song30,
@@ -144,28 +500,32 @@ const songs = [
     nation: "US UK",
     type: "Pop",
     img: "https://i.pinimg.com/564x/09/29/fb/0929fb8a1719dfc8bd1c51cbe127ee55.jpg",
-  },{
+  },
+  {
     song: "Let me love you",
     name: "DJ Snake ft Justin Beiber",
     src: Song24,
     nation: "US UK",
     type: "EDM",
     img: "https://i.pinimg.com/736x/b2/74/51/b274513c6313b7d2622e4119bbb3244d.jpg",
-  },{
+  },
+  {
     song: "Taki taki",
     name: "DJ Snake ft. Selena Gomez, Ozuna, Cardi B",
     src: Song25,
     nation: "US UK",
     type: "EDM",
     img: "https://i.pinimg.com/736x/5b/07/a3/5b07a308b6f5d82e2f59c51d1858c6f7.jpg",
-  },{
+  },
+  {
     song: "Lean on",
     name: "Major Lazer ft DJ Snake",
     src: Song27,
     nation: "US UK",
     type: "EDM",
     img: "https://i.pinimg.com/564x/b0/9c/4b/b09c4b721807c2d8f6f9acb426dab5b4.jpg",
-  },{
+  },
+  {
     song: "Get down",
     name: "Dillon Francis, DJ Snake",
     src: Song23,
@@ -196,35 +556,40 @@ const songs = [
     nation: "US UK",
     type: "Pop",
     img: "https://i.pinimg.com/564x/f0/be/4a/f0be4a43255e769c84fffaedcdf4b7ae.jpg",
-  },{
+  },
+  {
     song: "Left to right",
     name: "Charlie Puth ft Jungkook (BTS)",
     src: Song16,
     nation: "US UK",
     type: "Pop",
     img: "https://i.pinimg.com/564x/f1/a2/f6/f1a2f652860db1c528ff8fab9f830ab1.jpg",
-  },{
+  },
+  {
     song: "See you again",
     name: "Charlie Puth",
     src: Song20,
     nation: "US UK",
     type: "Pop",
     img: "https://i.pinimg.com/564x/e8/58/48/e85848bba2f1b9f610e8ffba4e4497e9.jpg",
-  },{
+  },
+  {
     song: "One call away",
     name: "Charlie Puth",
     src: Song17,
     nation: "US UK",
     type: "Pop",
     img: "https://i.pinimg.com/564x/71/c5/19/71c519b122a3293aeaf7422dd025b01b.jpg",
-  },{
+  },
+  {
     song: "Cheat on you",
     name: "Charlie Puth",
     src: Song15,
     nation: "US UK",
     type: "Pop",
     img: "https://i.pinimg.com/564x/e0/ff/2f/e0ff2fc24c7f5586c8ee166b7a792457.jpg",
-  },{
+  },
+  {
     song: "We don't talk anymore",
     name: "Charlie Puth ft Selena Gomez",
     src: Song18,
@@ -279,63 +644,71 @@ const songs = [
     nation: "US UK",
     type: "Ballad,Viral",
     img: "https://i.pinimg.com/564x/fc/af/34/fcaf349d2c1aba80f56f53ece1cab1e9.jpg",
-  }, {
+  },
+  {
     song: "Lighters Tiktok Version",
     name: "Bruno Mars ft Eminem (cover)",
     src: Song6,
     nation: "US UK",
     type: "Pop",
     img: "https://i.pinimg.com/564x/36/83/e7/3683e7afcedebcf39a5128417db1f0e6.jpg",
-  }, {
+  },
+  {
     song: "Just the Way You Are",
     name: "Bruno Mars",
     src: Song9,
     nation: "US UK",
     type: "Pop,Viral",
     img: "https://i.pinimg.com/564x/43/fb/02/43fb02fb1353ddfe4da9cda76d19dd00.jpg",
-  }, {
+  },
+  {
     song: "Nothin On You",
     name: "Bruno Mars",
     src: Song1,
     nation: "US UK",
     type: "Pop",
     img: "https://i.pinimg.com/564x/cd/b1/17/cdb117345e1b1281829eb6b0529f5b60.jpg",
-  }, {
+  },
+  {
     song: "Marry you",
     name: "Bruno Mars",
     src: Song2,
     nation: "US UK",
     type: "Pop",
     img: "https://i.pinimg.com/564x/74/e7/ad/74e7adc5f50a46e18847cef9fafbbb08.jpg",
-  }, {
+  },
+  {
     song: "Talking to the moon",
     name: "Bruno Mars",
     src: Song3,
     nation: "US UK",
     type: "Ballad",
     img: "https://i.pinimg.com/564x/b3/ec/73/b3ec7376098b391c45de114adaddfa9a.jpg",
-  }, {
+  },
+  {
     song: "It will rain cover",
     name: "Bruno Mars(cover by Eltasya Natasha)",
     src: Song5,
     nation: "US UK",
     type: "Ballad",
     img: "https://i.pinimg.com/564x/19/a3/7a/19a37a6ac478d38ce9766938567d52e5.jpg",
-  },  {
+  },
+  {
     song: "That what i like",
     name: "Bruno Mars",
     src: Song4,
     nation: "US UK",
     type: "Ballad",
     img: "https://i.pinimg.com/736x/bc/3a/43/bc3a435e0ce284796e414b9712b8f15c.jpg",
-  },  {
+  },
+  {
     song: "Uptown Funk",
     name: "Bruno Mars",
     src: Song8,
     nation: "US UK",
     type: "Pop,Bang",
     img: "https://i.pinimg.com/564x/15/f9/14/15f914f08abf121184953efdb476c764.jpg",
-  }, 
+  },
   {
     song: "Wake me up",
     name: "Avicii",
@@ -343,7 +716,7 @@ const songs = [
     nation: "US UK",
     type: "EDM",
     img: "https://i.pinimg.com/564x/01/fc/7e/01fc7ec734b9b4799ce8617351511101.jpg",
-  }, 
+  },
   {
     song: "Waiting for love",
     name: "Avicii",
@@ -351,21 +724,23 @@ const songs = [
     nation: "US UK",
     type: "EDM",
     img: "https://i.pinimg.com/564x/7a/cd/28/7acd28b0c2e611caa6b12956fa38582b.jpg",
-  }, {
+  },
+  {
     song: "Levels",
     name: "Avicii",
     src: L,
     nation: "US UK",
     type: "EDM",
     img: "https://i.pinimg.com/564x/a1/16/0d/a1160d656bad21ddaeccf26bbea1de72.jpg",
-  }, {
+  },
+  {
     song: "The nights",
     name: "Avicii",
     src: TheNights,
     nation: "US UK",
     type: "EDM",
     img: "https://i.pinimg.com/564x/b5/c0/e0/b5c0e01191592554c54e1a502019d083.jpg",
-  }, 
+  },
   {
     song: "7 rings",
     name: "Ariana Grande",
@@ -373,28 +748,32 @@ const songs = [
     nation: "US UK",
     type: "Pop",
     img: "https://i.pinimg.com/564x/75/e7/ba/75e7bac6a9bb097d1dc4e316b3db0a07.jpg",
-  }, {
+  },
+  {
     song: "Bang bang",
     name: "Jessie J, Ariana Grande, Nicki Minaj ",
     src: BangBang,
     nation: "US UK",
     type: "Pop",
     img: "https://i.pinimg.com/564x/b6/bd/42/b6bd42b5820120c0bdbc1bf5435adc3d.jpg",
-  }, {
+  },
+  {
     song: "34+35",
     name: "Ariana Grande",
     src: Add,
     nation: "US UK",
     type: "Pop",
     img: "https://i.pinimg.com/564x/f3/d9/fd/f3d9fd0b241e61e92541bb04e9de9848.jpg",
-  }, {
+  },
+  {
     song: "Poisitions",
     name: "Ariana Grande",
     src: Positions,
     nation: "US UK",
     type: "Pop",
     img: "https://i.pinimg.com/564x/a7/d6/80/a7d6801fd7ad623e2e5371dd6d0a1c03.jpg",
-  }, {
+  },
+  {
     song: "Side to side",
     name: "Ariana Grande",
     src: SideToSide,
@@ -409,63 +788,72 @@ const songs = [
     nation: "US UK",
     type: "Pop",
     img: "https://i.pinimg.com/564x/82/97/de/8297dee2d3f3e92a18cca6191d35938d.jpg",
-  },{
+  },
+  {
     song: "Beautiful mistake",
     name: "Maroon 5 (cover by xooos)",
     src: BM,
     nation: "US UK",
     type: "Pop",
     img: "https://i.pinimg.com/564x/9f/c6/9b/9fc69ba3cd072d06ab18db142b5da690.jpg",
-  },{
+  },
+  {
     song: "Don't wanna know",
     name: "Maroon 5",
     src: DWN,
     nation: "US UK",
     type: "Pop",
     img: "https://i.pinimg.com/736x/be/0a/50/be0a508157dd683648315aba05b288e9.jpg",
-  },{
+  },
+  {
     song: "Girl like you",
     name: "Maroon 5 ft Cardi B",
     src: GLU,
     nation: "US UK",
     type: "Pop",
     img: "https://i.pinimg.com/564x/4b/9c/ed/4b9ced64e91f99830daf0a112d2398bc.jpg",
-  },{
+  },
+  {
     song: "Maps",
     name: "Maroon 5",
     src: MAPS,
     nation: "US UK",
     type: "Pop",
     img: "https://i.pinimg.com/736x/54/4f/9f/544f9fcea61dec3b9648a00598f4fbf2.jpg",
-  },{
+  },
+  {
     song: "Memories",
     name: "Maroon 5",
     src: MEMORIES,
     nation: "US UK",
     type: "Pop",
     img: "https://i.pinimg.com/564x/2d/50/0a/2d500a8767b44f34e82236cf55d23fdb.jpg",
-  },{
+  },
+  {
     song: "One more night",
     name: "Maroon 5",
     src: OMN,
     nation: "US UK",
     type: "Pop",
     img: "https://i.pinimg.com/564x/4a/31/c0/4a31c0c7e5c2c2726d83f45766388570.jpg",
-  },{
+  },
+  {
     song: "Payphone - Call Me Maybe (Tiktok)",
     name: "Maroon 5",
     src: PP,
     nation: "US UK",
     type: "Pop",
     img: "https://i.pinimg.com/564x/a1/d7/6c/a1d76c52eb31017f36e9bf4a12eba430.jpg",
-  },{
+  },
+  {
     song: "Sugar",
     name: "Maroon 5",
     src: SUGAR,
     nation: "US UK",
     type: "Pop",
     img: "https://i.pinimg.com/564x/bf/51/bb/bf51bbbb06dd4308b4898dbcba19a3c5.jpg",
-  },{
+  },
+  {
     song: "What lover do",
     name: "Maroon 5",
     src: WLD,
@@ -488,56 +876,64 @@ const songs = [
     nation: "US UK",
     type: "EDM",
     img: "https://i.pinimg.com/564x/70/e0/86/70e08679f130310c83a6223dffa4f092.jpg",
-  },{
+  },
+  {
     song: "Alone",
     name: "Alan Walker",
     src: Alone,
     nation: "US UK",
     type: "EDM,Pop",
     img: "https://i.pinimg.com/564x/1f/98/5e/1f985e2326cf517e83ed48a30d2530e2.jpg",
-  },{
+  },
+  {
     song: "Tired",
     name: "Alan Walker",
     src: Tired,
     nation: "US UK",
     type: "EDM,Pop",
     img: "https://i.pinimg.com/564x/46/6a/1d/466a1dbf3506b30d2050a1d2fcd6c6e9.jpg",
-  },{
+  },
+  {
     song: "All Falls Down",
     name: "Alan Walker",
     src: AFD,
     nation: "US UK",
     type: "EDM,Pop",
     img: "https://i.pinimg.com/564x/50/8c/d9/508cd9bb88d55019184f0bf2c0357ce2.jpg",
-  },{
+  },
+  {
     song: "Darkside",
     name: "Alan Walker",
     src: Darkside,
     nation: "US UK",
     type: "EDM",
     img: "https://i.pinimg.com/564x/44/62/e7/4462e76f5b8295e02f8a43684fab60fc.jpg",
-  },{
+  },
+  {
     song: "On my way",
     name: "Alan Walker",
     src: OMW,
     nation: "US UK",
     type: "EDM,Pop",
     img: "https://i.pinimg.com/736x/74/98/5b/74985b0bcfa444fbbfaacffd40288bc6.jpg",
-  },{
+  },
+  {
     song: "Diamond Heart",
     name: "Alan Walker",
     src: DM,
     nation: "US UK",
     type: "EDM,Pop",
     img: "https://i.pinimg.com/736x/68/05/dc/6805dc92877497aa5407a22c3092af68.jpg",
-  },{
+  },
+  {
     song: "Lily",
     name: "Alan Walker",
     src: Lily,
     nation: "US UK",
     type: "EDM,Pop",
     img: "https://i.pinimg.com/564x/2f/37/2b/2f372b8db991d315d3209107eed41484.jpg",
-  },{
+  },
+  {
     song: "Sing me to sleep",
     name: "Alan Walker",
     src: SMTL,
@@ -811,18 +1207,15 @@ const songs = [
   },
 ];
 
-
-function compareValues(key, order = 'asc') {
-  return function(a, b) {
-    if(!a.hasOwnProperty(key) || !b.hasOwnProperty(key)) {
+function compareValues(key, order = "asc") {
+  return function (a, b) {
+    if (!a.hasOwnProperty(key) || !b.hasOwnProperty(key)) {
       // nếu không tồn tại
       return 0;
     }
 
-    const varA = (typeof a[key] === 'string') ?
-      a[key].toUpperCase() : a[key];
-    const varB = (typeof b[key] === 'string') ?
-      b[key].toUpperCase() : b[key];
+    const varA = typeof a[key] === "string" ? a[key].toUpperCase() : a[key];
+    const varB = typeof b[key] === "string" ? b[key].toUpperCase() : b[key];
 
     let comparison = 0;
     if (varA > varB) {
@@ -830,16 +1223,9 @@ function compareValues(key, order = 'asc') {
     } else if (varA < varB) {
       comparison = -1;
     }
-    return (
-      (order === 'desc') ? (comparison * -1) : comparison
-    );
+    return order === "desc" ? comparison * -1 : comparison;
   };
 }
-// songs.sort(compareValues('song'));
+songs.sort(compareValues('song'));
 
-
-
-
-
-
-export { songs};
+export { songs };

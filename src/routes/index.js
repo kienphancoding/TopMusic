@@ -27,7 +27,10 @@ import Search from "../pages/Search"
 // import HeaderOnly from "../layouts/HeaderOnly"
 import NoMatch from "../pages/NoMatch"
 
-// import EDM from "../pages/EDM"
+import EDM from "../pages/EDM"
+import Ballad from "../pages/Ballad"
+import Viral from "../pages/Viral"
+import Pop from "../pages/Pop"
 
 const routes = [
     {path:"/",component:Home},
@@ -55,7 +58,10 @@ const routes = [
     { path: "/Zedd", component: Zedd ,},
     { path: "/search", component: Search ,},
 
-    // {path:"/EDM",component:EDM},
+    {path:"/EDM",component:EDM},
+    {path:"/Ballad",component:Ballad},
+    {path:"/Viral",component:Viral},
+    {path:"/Pop",component:Pop},
 
     
     {path:"*",component:NoMatch,layout:null},

@@ -5,13 +5,9 @@ import style from "./Header.module.scss";
 const Header = () => {
   const menu = [
     { path: "/EDM", name: "EDM" },
-    { path: "/Tiktok", name: "Tiktok" },
     { path: "/Ballad", name: "Ballad" },
     { path: "/Viral", name: "Viral" },
-    { path: "/Bang", name: "Bang" },
-    { path: "/KhongLoi", name: "Không lời" },
-    { path: "/Chill", name: "Chill" },
-    { path: "/CoDien", name: "Cổ điển" },
+    { path: "/Pop", name: "Pop" },
   ];
   return (
     <div className={cx(style.wrapper)}>

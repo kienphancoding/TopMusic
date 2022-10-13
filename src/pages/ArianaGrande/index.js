@@ -88,20 +88,6 @@ const ArianaGrande = () => {
     return () => clearInterval(timeSetWidth);
   }, []);
 
-  //auto next song
-  useEffect(() => {
-    const timeCheckLoop = setInterval(() => {
-      if (
-        Math.floor(noRef.current.currentTime) ===
-        Math.floor(noRef.current.duration)
-      ) {
-        handleNextSong();
-      }
-    }, 100);
-
-    return () => clearInterval(timeCheckLoop);
-  }, [indexSong]);
-
   //loop song
   useEffect(() => {
     const timeCheckLoop = setInterval(() => {
@@ -117,6 +103,22 @@ const ArianaGrande = () => {
 
     return () => clearInterval(timeCheckLoop);
   }, [loopSong, indexSong]);
+
+  //auto next song
+  useEffect(() => {
+    const timeCheckLoop = setInterval(() => {
+      if (
+        Math.floor(noRef.current.currentTime) ===
+        Math.floor(noRef.current.duration)
+      ) {
+        handleNextSong();
+      }
+    }, 100);
+
+    return () => clearInterval(timeCheckLoop);
+  }, [indexSong]);
+
+  
 
   //play or pause
   useEffect(() => {

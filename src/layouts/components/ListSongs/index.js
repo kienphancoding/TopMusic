@@ -5,7 +5,7 @@ import style from "../../../pages/Pages.module.scss";
 
 const ListSongs = ({ indexSong, setIndexSong, name }) => {
   const NewSongs = songs.filter((x)=>{
-    return x.name.includes(name);
+    return x.name.includes(name) || x.type.includes(name)
   })
   return (
     <div className={cx(style.list)}>
