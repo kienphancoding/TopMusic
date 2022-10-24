@@ -192,8 +192,8 @@ const Search = () => {
               </div>
             );
           } else if (
-            x.song.toUpperCase().includes(delay.toUpperCase()) ||
-            x.name.toUpperCase().includes(delay.toUpperCase())
+            x.song.toUpperCase().includes(delay.trim().toUpperCase()) ||
+            x.name.toUpperCase().includes(delay.trim().toUpperCase())
           ) {
             let itemSong = x.song.toUpperCase().split(delay.toUpperCase());
             let itemName = x.name.toUpperCase().split(delay.toUpperCase());
