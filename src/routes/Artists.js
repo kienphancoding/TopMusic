@@ -104,6 +104,66 @@ const songsSidebars = [
     name: "Zedd",
     img: "https://i.pinimg.com/564x/3f/72/b8/3f72b86ccc1d543f08ac033d13d062cf.jpg",
   },
+  {
+    path: "/BTS",
+    name: "BTS",
+    img: "https://i.pinimg.com/736x/54/91/f7/5491f74dbec32fea3ebe6e554492f800.jpg",
+  },
+  {
+    path: "/BebeRexha",
+    name: "Bebe Rexha",
+    img: "https://i.pinimg.com/564x/61/55/bc/6155bc4990b91edc313ccd63b1eea3c7.jpg",
+  },
+  {
+    path: "/SamSmith",
+    name: "Sam Smith",
+    img: "https://i.pinimg.com/564x/ca/97/3c/ca973c39b981edfeeee6c27cebeb1024.jpg",
+  },
+  {
+    path: "/LadyGaga",
+    name: "Lady Gaga",
+    img: "https://i.pinimg.com/564x/2b/74/de/2b74de71bc16fc8f8fe83b877ac5de19.jpg",
+  },
+  {
+    path: "/KatyPerry",
+    name: "Katy Perry",
+    img: "https://i.pinimg.com/564x/fa/29/8e/fa298e8d9e3ae6195b436a39089f14be.jpg",
+  },
+  {
+    path: "/Adele",
+    name: "Adele",
+    img: "https://i.pinimg.com/564x/47/32/96/4732963c4d7b7553214b8c5696a81479.jpg",
+  },
+  {
+    path: "/Vicetone",
+    name: "Vicetone",
+    img: "https://i.pinimg.com/564x/00/ba/ff/00baffceb5f1be12fcfde1346db30803.jpg",
+  },
+  {
+    path: "/Yiruma",
+    name: "Yiruma",
+    img: "https://i.pinimg.com/564x/f7/6f/c2/f76fc25f94c470fdbd88602cbe838bc4.jpg",
+  },
+  {
+    path: "/HarryStyles",
+    name: "Harry Styles",
+    img: "https://i.pinimg.com/564x/45/5b/ec/455bec752a19253ddfd095f6960511ae.jpg",
+  },
+  {
+    path: "/LewisCapaldi",
+    name: "Lewis Capaldi",
+    img: "https://i.pinimg.com/564x/99/01/bc/9901bc0a7eb0fdf2c32269b4fdc86593.jpg",
+  },
+  {
+    path: "/LostFrequencies",
+    name: "Lost Frequencies",
+    img: "https://i.pinimg.com/564x/6f/d0/94/6fd094c2d72e360a8794f32ce9001c19.jpg",
+  },
+  {
+    path: "/Lauv",
+    name: "Lauv",
+    img: "https://i.pinimg.com/564x/62/b9/ea/62b9ea7b1010ece0146eb1137a804437.jpg",
+  },
 ];
 
-export {songsSidebars}
+export { songsSidebars };

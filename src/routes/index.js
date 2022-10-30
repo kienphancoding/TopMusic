@@ -1,16 +1,14 @@
 import Home from "../pages/Home";
-// import Static from "../pages/Static"
+import Static from "../pages/Static"
 import Artists from "../pages/Artists";
 import Search from "../pages/Search";
-
-// import HeaderOnly from "../layouts/HeaderOnly"
 import NoMatch from "../pages/NoMatch";
 
 import { songsSidebars } from "./Artists";
 
 let routes = [
   { path: "/", component: Home },
-  // {path:"/statics",component:Static,layout:HeaderOnly},
+  {path:"/static",component:Static},
   { path: "/CalvinHarris", component: Artists },
   { path: "/search", component: Search },
 

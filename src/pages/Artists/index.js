@@ -10,17 +10,26 @@ import Play from "./Components/Play";
 import Pause from "./Components/Pause";
 import Loop from "./Components/Loop";
 import Random from "./Components/Random";
+import { songsSidebars } from "../../routes/Artists";
 
 const Artists = () => {
   const [play, setPlay] = useState(true); // true la hien nut play
   const [indexSong, setIndexSong] = useState(0); // vi tri hien tai cua bai hat
   const [loopSong, setLoopSong] = useState(false); // lap lai bai hat
+  const [staticSong, setStaticSong] = useState(() => {
+    let array = [];
+    songsSidebars.map(() => {
+      array.push(0);
+    });
+    const jsonStorage = JSON.parse(localStorage.getItem("static"));
+    return jsonStorage ?? array;
+  });
 
   const name = window.location.pathname.replace("/", "");
 
   useEffect(() => {
     setIndexSong(() => 0);
-  },[name]);
+  }, [name]);
 
   const NewSongs = songs.filter((x) => {
     return x.name.replace(/ /g, "").toUpperCase().includes(name.toUpperCase());
@@ -143,6 +152,16 @@ const Artists = () => {
     }
   }, [play, indexSong, loopSong, name]);
 
+  //static
+  useEffect(() => {
+    for (let i = 0; i <= songsSidebars.length - 1; i++) {
+      if (songsSidebars[i].path.includes(name)) {
+        staticSong[i]++
+      }
+    }
+    localStorage.setItem("static", JSON.stringify(staticSong));
+  }, [indexSong, name,loopSong]);
+
   return (
     <div className={cx(style.wrapper)}>
       <Main NewSongs={NewSongs} indexSong={indexSong} />
@@ -152,8 +171,15 @@ const Artists = () => {
         setIndexSong={setIndexSong}
         name={name}
       />
-      
-      <audio ref={playRef} src={indexSong>NewSongs.length-1?NewSongs[0].src:NewSongs[indexSong].src} />
+
+      <audio
+        ref={playRef}
+        src={
+          indexSong > NewSongs.length - 1
+            ? NewSongs[0].src
+            : NewSongs[indexSong].src
+        }
+      />
 
       <div
         className={cx(style.durationBar)}

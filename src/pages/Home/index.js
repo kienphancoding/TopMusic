@@ -11,8 +11,8 @@ import {
   faShuffle,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { Link } from "react-router-dom";
 import FullSongs from "../NoMatch/NoMatch";
+import Main from "../Artists/Components/Main";
 const Home = () => {
   const [play, setPlay] = useState(true); // true la hien nut play
   const [indexSong, setIndexSong] = useState(0); // vi tri hien tai cua bai hat
@@ -123,16 +123,9 @@ const Home = () => {
     }
   }, [play, indexSong, loopSong]);
 
-  document.title = `${songs[indexSong].song}-${songs[indexSong].name}`;
   return (
     <div className={cx(style.wrapper)}>
-      <div className={cx(style.main)}>
-        <img src={songs[indexSong].img} alt="img" />
-        <div className={cx(style.intro)}>
-          <h1>{songs[indexSong].song}</h1>
-          <p>{songs[indexSong].name}</p>
-        </div>
-      </div>
+      <Main NewSongs={songs} indexSong={indexSong} />
 
       <FullSongs indexSong={indexSong} setIndexSong={setIndexSong} />
 

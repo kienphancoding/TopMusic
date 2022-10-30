@@ -106,10 +106,7 @@
     --radius: 70px;
     width: var(--radius);
     height: var(--radius);
-  }
-  .iconHeart {
-    font-size: 30px;
-    color: var(--color-3);
+    min-width: var(--radius);
   }
 }
 @keyframes spin {

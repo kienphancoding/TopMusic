@@ -105,46 +105,45 @@ import Song42 from "../assets/EdSheeran/y2mate.com - Ed Sheeran  Photograph Lyri
 import Song43 from "../assets/EdSheeran/y2mate.com - Ed Sheeran  Shape Of You Lyrics.mp3";
 import Song44 from "../assets/EdSheeran/y2mate.com - Female ver Ed Sheeran  Bad Habits cover by TIN 빌보드Billboard노래추천  Coversong  Pop.mp3";
 
-import Song50 from "../assets/Eminem/y2mate.com - Eminem  Godzilla ft Juice WRLD Directed by Cole Bennett.mp3"
-import Song51 from "../assets/Eminem/y2mate.com - Eminem  Love The Way You Lie ft Rihanna.mp3"
-import Song52 from "../assets/Eminem/y2mate.com - Eminem  Not Afraid Official Video.mp3"
-import Song53 from "../assets/Eminem/y2mate.com - Eminem  Rap God Explicit.mp3"
+import Song50 from "../assets/Eminem/y2mate.com - Eminem  Godzilla ft Juice WRLD Directed by Cole Bennett.mp3";
+import Song51 from "../assets/Eminem/y2mate.com - Eminem  Love The Way You Lie ft Rihanna.mp3";
+import Song52 from "../assets/Eminem/y2mate.com - Eminem  Not Afraid Official Video.mp3";
+import Song53 from "../assets/Eminem/y2mate.com - Eminem  Rap God Explicit.mp3";
 
-import Song63 from "../assets/Zedd/y2mate.com - Zedd  Beautiful Now ft Jon Bellion Official Music Video.mp3"
-import Song64 from "../assets/Zedd/y2mate.com - Zedd  Clarity ft Foxes Official Music Video.mp3"
-import Song65 from "../assets/Zedd/y2mate.com - Zedd Alessia Cara  Stay Official Music Video.mp3"
-import Song66 from "../assets/Zedd/y2mate.com - Zedd Maren Morris Grey  The Middle Official Music Video.mp3"
+import Song63 from "../assets/Zedd/y2mate.com - Zedd  Beautiful Now ft Jon Bellion Official Music Video.mp3";
+import Song64 from "../assets/Zedd/y2mate.com - Zedd  Clarity ft Foxes Official Music Video.mp3";
+import Song65 from "../assets/Zedd/y2mate.com - Zedd Alessia Cara  Stay Official Music Video.mp3";
+import Song66 from "../assets/Zedd/y2mate.com - Zedd Maren Morris Grey  The Middle Official Music Video.mp3";
 
-import Song70 from "../assets/ImagineDragons/y2mate.com - Imagine Dragons  Believer Lyrics.mp3"
-import Song71 from "../assets/ImagineDragons/y2mate.com - Imagine Dragons  Demons Lyric Video.mp3"
-import Song72 from "../assets/ImagineDragons/y2mate.com - Imagine Dragons  Thunder.mp3"
-import Song73 from "../assets/ImagineDragons/y2mate.com - LyricsVietsub  Enemy  Imagine Dragons x JID.mp3"
-import Song74 from "../assets/ImagineDragons/y2mate.com - Vietsub  Edit Bad Liar  Imagine Dragons live.mp3"
+import Song70 from "../assets/ImagineDragons/y2mate.com - Imagine Dragons  Believer Lyrics.mp3";
+import Song71 from "../assets/ImagineDragons/y2mate.com - Imagine Dragons  Demons Lyric Video.mp3";
+import Song72 from "../assets/ImagineDragons/y2mate.com - Imagine Dragons  Thunder.mp3";
+import Song73 from "../assets/ImagineDragons/y2mate.com - LyricsVietsub  Enemy  Imagine Dragons x JID.mp3";
+import Song74 from "../assets/ImagineDragons/y2mate.com - Vietsub  Edit Bad Liar  Imagine Dragons live.mp3";
 
-import Song80 from "../assets/TaylorSwift/y2mate.com - Shake It Off  Taylor Swift Lyrics .mp3"
-import Song81 from "../assets/TaylorSwift/y2mate.com - Taylor Swift  Bad Blood Audio.mp3"
-import Song82 from "../assets/TaylorSwift/y2mate.com - Taylor Swift  Blank Space Lyrics.mp3"
-import Song83 from "../assets/TaylorSwift/y2mate.com - Taylor Swift  Look What You Made Me Do Lyric Video.mp3"
-import Song84 from "../assets/TaylorSwift/y2mate.com - Taylor Swift  Love Story Lyrics.mp3.webm"
-import Song85 from "../assets/TaylorSwift/y2mate.com - Taylor Swift  Style Lyrics.mp3"
-import Song86 from "../assets/TaylorSwift/y2mate.com - ZAYN Taylor Swift  I Dont Wanna Live Forever Lyrics.mp3"
+import Song80 from "../assets/TaylorSwift/y2mate.com - Shake It Off  Taylor Swift Lyrics .mp3";
+import Song81 from "../assets/TaylorSwift/y2mate.com - Taylor Swift  Bad Blood Audio.mp3";
+import Song82 from "../assets/TaylorSwift/y2mate.com - Taylor Swift  Blank Space Lyrics.mp3";
+import Song83 from "../assets/TaylorSwift/y2mate.com - Taylor Swift  Look What You Made Me Do Lyric Video.mp3";
+import Song84 from "../assets/TaylorSwift/y2mate.com - Taylor Swift  Love Story Lyrics.mp3.webm";
+import Song85 from "../assets/TaylorSwift/y2mate.com - Taylor Swift  Style Lyrics.mp3";
+import Song86 from "../assets/TaylorSwift/y2mate.com - ZAYN Taylor Swift  I Dont Wanna Live Forever Lyrics.mp3";
 
-import Rihanna1 from "../assets/Rihanna/y2mate.com - Umbrella  Ember Island  Matte Remix Lyrics  Vietsub .mp3"
+import Rihanna1 from "../assets/Rihanna/y2mate.com - Umbrella  Ember Island  Matte Remix Lyrics  Vietsub .mp3";
 
-import Song90 from "../assets/ShawnMendes/y2mate.com - Shawn Mendes  Theres Nothing Holdin Me Back Lyrics.mp3"
-import Song91 from "../assets/ShawnMendes/y2mate.com - Shawn Mendes Camila Cabello  Señorita Lyrics.mp3"
-import Song92 from "../assets/ShawnMendes/y2mate.com - Treat You Better Shawn Mendes Lyrics.mp3"
+import Song90 from "../assets/ShawnMendes/y2mate.com - Shawn Mendes  Theres Nothing Holdin Me Back Lyrics.mp3";
+import Song91 from "../assets/ShawnMendes/y2mate.com - Shawn Mendes Camila Cabello  Señorita Lyrics.mp3";
+import Song92 from "../assets/ShawnMendes/y2mate.com - Treat You Better Shawn Mendes Lyrics.mp3";
 
-import Song100 from "../assets/JustinBeiber/y2mate.com - As Long As You Love Me  Justin Bieber ft Big Sean  Official Lyrics.mp3"
-import Song101 from "../assets/JustinBeiber/y2mate.com - Dan  Shay Justin Bieber  10000 Hours Lyrics.mp3"
-import Song102 from "../assets/JustinBeiber/y2mate.com - Justin Bieber  Baby ft Ludacris Lyrics Video.mp3"
-import Song103 from "../assets/JustinBeiber/y2mate.com - Justin Bieber  Intentions Lyrics ft Quavo.mp3"
-import Song104 from "../assets/JustinBeiber/y2mate.com - Justin Bieber  Peaches Lyrics ft Daniel Caesar Giveon.mp3"
-import Song105 from "../assets/JustinBeiber/y2mate.com - Justin Bieber  What Do You Mean Lyrics.mp3"
-import Song106 from "../assets/JustinBeiber/y2mate.com - Justin Bieber  Yummy Lyrics.mp3"
-import Song107 from "../assets/JustinBeiber/y2mate.com - LyricsVietsub Love Yourself  Justin Bieber.mp3"
-import Song108 from "../assets/JustinBeiber/y2mate.com - The Kid LAROI Justin Bieber  Stay Lyrics.mp3"
-
+import Song100 from "../assets/JustinBeiber/y2mate.com - As Long As You Love Me  Justin Bieber ft Big Sean  Official Lyrics.mp3";
+import Song101 from "../assets/JustinBeiber/y2mate.com - Dan  Shay Justin Bieber  10000 Hours Lyrics.mp3";
+import Song102 from "../assets/JustinBeiber/y2mate.com - Justin Bieber  Baby ft Ludacris Lyrics Video.mp3";
+import Song103 from "../assets/JustinBeiber/y2mate.com - Justin Bieber  Intentions Lyrics ft Quavo.mp3";
+import Song104 from "../assets/JustinBeiber/y2mate.com - Justin Bieber  Peaches Lyrics ft Daniel Caesar Giveon.mp3";
+import Song105 from "../assets/JustinBeiber/y2mate.com - Justin Bieber  What Do You Mean Lyrics.mp3";
+import Song106 from "../assets/JustinBeiber/y2mate.com - Justin Bieber  Yummy Lyrics.mp3";
+import Song107 from "../assets/JustinBeiber/y2mate.com - LyricsVietsub Love Yourself  Justin Bieber.mp3";
+import Song108 from "../assets/JustinBeiber/y2mate.com - The Kid LAROI Justin Bieber  Stay Lyrics.mp3";
 
 const songs = [
   {
@@ -763,7 +762,7 @@ const songs = [
     src: Add,
     nation: "US UK",
     type: "Pop",
-    img: "https://i.pinimg.com/564x/f3/d9/fd/f3d9fd0b241e61e92541bb04e9de9848.jpg",
+    img: "https://i.pinimg.com/564x/a6/d1/76/a6d1761cc0da31117d6765242bc7a369.jpg",
   },
   {
     song: "Poisitions",
@@ -1199,7 +1198,7 @@ const songs = [
   },
   {
     song: "There for you",
-    name: "Martin Garrix",
+    name: "Martin Garrix & Troye Sivan",
     src: TFY,
     nation: "US UK",
     type: "Pop,EDM",
@@ -1226,6 +1225,6 @@ function compareValues(key, order = "asc") {
     return order === "desc" ? comparison * -1 : comparison;
   };
 }
-songs.sort(compareValues('song'));
+songs.sort(compareValues("song"));
 
 export { songs };

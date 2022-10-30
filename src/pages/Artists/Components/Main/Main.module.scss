@@ -11,6 +11,7 @@
     --radius: 180px;
     width: var(--radius);
     height: var(--radius);
+    min-width: var(--radius);
     border-radius: 100px;
     animation: spin 20s linear infinite;
   }
@@ -43,6 +44,7 @@
       --radius: 150px;
       width: var(--radius);
       height: var(--radius);
+      min-width: var(--radius);
     }
     h1 {
       max-height: 70px;

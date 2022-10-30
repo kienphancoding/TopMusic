@@ -5,7 +5,6 @@ import cx from "clsx";
 import { memo } from "react";
 
 const NextSong = ({ handleNextSong }) => {
-  console.log("render");
   return (
     <button onClick={handleNextSong}>
       <FontAwesomeIcon className={cx(style.icon)} icon={faForwardStep} />

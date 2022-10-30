@@ -1,0 +1,33 @@
+.wrapper {
+  width: calc(100vw - var(--width-sidebar) - 80px);
+  max-width: calc(100vw - var(--width-sidebar) - 80px);
+  //   overflow: initial;
+  overflow-x: scroll;
+  //   display: flex;
+  height: calc(100vh - 55px);
+  &::-webkit-scrollbar {
+    height: 10px;
+    width: 10px;
+    background-color: var(--color-1);
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: var(--color-6);
+    border-radius: 100px;
+  }
+  .item {
+    --width: 60px;
+    display: flex;
+
+    .count {
+      background-color: var(--color-4);
+      height: var(--width);
+      margin: 2px 0;
+    }
+    img {
+      height: var(--width);
+      width: var(--width);
+      margin: 1px 0;
+      margin-right: 20px;
+    }
+  }
+}

@@ -136,8 +136,6 @@ const Search = () => {
     }
   }, [play, indexSong, loopSong]);
 
-  document.title = `${songs[indexSong].song}-${songs[indexSong].name}`;
-
   useEffect(() => {
     const delayInput = setTimeout(() => {
       setDelay(input);

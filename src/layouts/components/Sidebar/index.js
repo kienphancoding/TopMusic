@@ -1,4 +1,4 @@
-import { faHouse, faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
+import { faChartColumn, faHouse, faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import cx from "clsx";
 import { Link } from "react-router-dom";
@@ -28,32 +28,31 @@ const Sidebar = () => {
 
   songsSidebars.sort(compareValues("name"));
 
+  const sidebarItem = [
+    { path: "/", content: "Trang chủ", icon: faHouse },
+    { path: "/search", content: "Tìm kiếm", icon: faMagnifyingGlass },
+    { path: "/static", content: "Thống kê", icon: faChartColumn },
+  ];
+
   return (
     <div className={cx(style.wrapper)}>
-      <Link
-        style={
-          window.location.pathname === "/"
-            ? { backgroundColor: `var(--color-3)` }
-            : {}
-        }
-        className={cx(style.link)}
-        to="/"
-      >
-        <FontAwesomeIcon className={cx(style.icon)} icon={faHouse} />
-        <p className={cx(style.name)}>Trang chủ</p>
-      </Link>
-      <Link
-        style={
-          window.location.pathname === "/search"
-            ? { backgroundColor: `var(--color-3)` }
-            : {}
-        }
-        className={cx(style.link)}
-        to="/search"
-      >
-        <FontAwesomeIcon className={cx(style.icon)} icon={faMagnifyingGlass} />
-        <p className={cx(style.name)}>Tìm kiếm</p>
-      </Link>
+      {sidebarItem.map((x, index) => {
+        return (
+          <Link
+            key={index}
+            style={
+              window.location.pathname === x.path
+                ? { backgroundColor: `var(--color-3)` }
+                : {}
+            }
+            className={cx(style.link)}
+            to={x.path}
+          >
+            <FontAwesomeIcon className={cx(style.icon)} icon={x.icon} />
+            <p className={cx(style.name)}>{x.content}</p>
+          </Link>
+        );
+      })}
 
       {songsSidebars.map((x, index) => {
         return (
