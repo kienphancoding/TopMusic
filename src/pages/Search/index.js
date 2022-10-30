@@ -139,11 +139,11 @@ const Search = () => {
   document.title = `${songs[indexSong].song}-${songs[indexSong].name}`;
 
   useEffect(() => {
-    const delayInput = setTimeout(()=>{
-      setDelay(input)
-    },500)
+    const delayInput = setTimeout(() => {
+      setDelay(input);
+    }, 500);
 
-    return ()=>clearTimeout(delayInput)
+    return () => clearTimeout(delayInput);
   }, [input]);
 
   let newsong = songs.filter((x) => {
@@ -153,10 +153,10 @@ const Search = () => {
     );
   });
 
-  
   return (
     <div className={cx(style.wrapper)}>
       <input
+        spellCheck="false"
         onChange={(e) => setInput(e.target.value)}
         value={input}
         style={{
