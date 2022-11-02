@@ -110,11 +110,6 @@ const songsSidebars = [
     img: "https://i.pinimg.com/736x/54/91/f7/5491f74dbec32fea3ebe6e554492f800.jpg",
   },
   {
-    path: "/BebeRexha",
-    name: "Bebe Rexha",
-    img: "https://i.pinimg.com/564x/61/55/bc/6155bc4990b91edc313ccd63b1eea3c7.jpg",
-  },
-  {
     path: "/SamSmith",
     name: "Sam Smith",
     img: "https://i.pinimg.com/564x/ca/97/3c/ca973c39b981edfeeee6c27cebeb1024.jpg",
@@ -140,29 +135,9 @@ const songsSidebars = [
     img: "https://i.pinimg.com/564x/00/ba/ff/00baffceb5f1be12fcfde1346db30803.jpg",
   },
   {
-    path: "/Yiruma",
-    name: "Yiruma",
-    img: "https://i.pinimg.com/564x/f7/6f/c2/f76fc25f94c470fdbd88602cbe838bc4.jpg",
-  },
-  {
     path: "/HarryStyles",
     name: "Harry Styles",
     img: "https://i.pinimg.com/564x/45/5b/ec/455bec752a19253ddfd095f6960511ae.jpg",
-  },
-  {
-    path: "/LewisCapaldi",
-    name: "Lewis Capaldi",
-    img: "https://i.pinimg.com/564x/99/01/bc/9901bc0a7eb0fdf2c32269b4fdc86593.jpg",
-  },
-  {
-    path: "/LostFrequencies",
-    name: "Lost Frequencies",
-    img: "https://i.pinimg.com/564x/6f/d0/94/6fd094c2d72e360a8794f32ce9001c19.jpg",
-  },
-  {
-    path: "/Lauv",
-    name: "Lauv",
-    img: "https://i.pinimg.com/564x/62/b9/ea/62b9ea7b1010ece0146eb1137a804437.jpg",
   },
 ];
 

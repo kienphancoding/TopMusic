@@ -1,9 +1,15 @@
-import { faChartColumn, faHouse, faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
+import {
+  faChartColumn,
+  faHouse,
+  faMagnifyingGlass,
+} from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import cx from "clsx";
 import { Link } from "react-router-dom";
 import style from "./Sidebar.module.scss";
 import { songsSidebars } from "../../../routes/Artists";
+import { faTiktok } from "@fortawesome/free-brands-svg-icons";
+import { trendingSidebars } from "../../../routes/Trending";
 
 const Sidebar = () => {
   function compareValues(key, order = "asc") {
@@ -50,6 +56,24 @@ const Sidebar = () => {
           >
             <FontAwesomeIcon className={cx(style.icon)} icon={x.icon} />
             <p className={cx(style.name)}>{x.content}</p>
+          </Link>
+        );
+      })}
+
+      {trendingSidebars.map((x, index) => {
+        return (
+          <Link
+            key={index}
+            style={
+              window.location.pathname.includes(x.path)
+                ? { backgroundColor: `var(--color-3)` }
+                : {}
+            }
+            className={cx(style.link)}
+            to={x.path}
+          >
+            <FontAwesomeIcon className={cx(style.icon)} icon={faTiktok} />
+            <p className={cx(style.name)}>{x.name}</p>
           </Link>
         );
       })}

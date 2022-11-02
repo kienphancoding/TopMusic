@@ -5,7 +5,7 @@ import style from "../../../pages/Pages.module.scss";
 
 const ListSongs = ({ indexSong, setIndexSong, name }) => {
   const NewSongs = songs.filter((x) => {
-    return x.name.replace(/ /g, "").toUpperCase().includes(name.toUpperCase());
+    return x.name.replace(/ /g, "").toUpperCase().includes(name.toUpperCase()) || x.type.toUpperCase().includes(name.replace("/","").toUpperCase())
   });
   return (
     <div className={cx(style.list)}>

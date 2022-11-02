@@ -145,7 +145,338 @@ import Song106 from "../assets/JustinBeiber/y2mate.com - Justin Bieber  Yummy Ly
 import Song107 from "../assets/JustinBeiber/y2mate.com - LyricsVietsub Love Yourself  Justin Bieber.mp3";
 import Song108 from "../assets/JustinBeiber/y2mate.com - The Kid LAROI Justin Bieber  Stay Lyrics.mp3";
 
+import Song110 from "../assets/SamSmith/y2mate.com - Calvin Harris Sam Smith  Promises Official Lyric Video.mp3";
+import Song111 from "../assets/SamSmith/y2mate.com - La la la  Naughty Boy ft Sam Smith Lyrics  Vietsub Cover by VonCKen.mp3";
+import Song112 from "../assets/SamSmith/y2mate.com - Sam Smith  Diamonds.mp3";
+import Song113 from "../assets/SamSmith/y2mate.com - Sam Smith  Im Not The Only One Lyrics.mp3";
+import Song114 from "../assets/SamSmith/y2mate.com - Sam Smith  Too Good At Goodbyes Live From Hackney Round Chapel.mp3";
+import Song115 from "../assets/SamSmith/y2mate.com - Sam Smith  Unholy Lyrics ft Kim Petras mommy dont know daddys getting hot TikTok Song.mp3";
+import Song116 from "../assets/ImagineDragons/y2mate.com - Imagine Dragons  Bones Official Music Video.mp3";
+
+import Song117 from "../assets/HarryStyles/y2mate.com - Harry Styles  As It Was Lyrics.mp3";
+import Song118 from "../assets/HarryStyles/y2mate.com - Harry Styles  Late Night Talking Audio.mp3";
+import Song119 from "../assets/HarryStyles/y2mate.com - Harry Styles  Watermelon Sugar Lyrics.mp3";
+import Song120 from "../assets/LadyGaga/y2mate.com - Lady Gaga Bradley Cooper  Shallow from A Star Is Born Official Music Video.mp3";
+
+import Song121 from "../assets/KatyPerry/y2mate.com - Katy Perry  Firework Lyrics.mp3";
+import Song122 from "../assets/KatyPerry/y2mate.com - Katy Perry  Roar Lyrics.mp3";
+import Song123 from "../assets/KatyPerry/y2mate.com - Vietsub  Lyrics The One That Got Away  Brielle Von Hugel Katy Perry Cover.mp3";
+import Song124 from "../assets/KatyPerry/y2mate.com - Katy Perry  Dark Horse Lyrics ft Juicy J.mp3.webm";
+
+import Song125 from "../assets/Adele/y2mate.com - Adele  Hello Lyrics.mp3";
+import Song126 from "../assets/Adele/y2mate.com - Adele  Someone Like You Official Music Video.mp3";
+import Song127 from "../assets/Adele/y2mate.com - Adele  When We Were Young John Lundvik Acoustic Cover.mp3";
+import Song128 from "../assets/Adele/y2mate.com - LyricsVietsub Easy On Me  ADELE  Cover by Leroy Sanchez.mp3";
+import Song129 from "../assets/Adele/y2mate.com - LyricsVietsub Send My Love  Sit Still Look Pretty  Acoustic mashup.mp3";
+import Song130 from "../assets/Adele/y2mate.com - LyricsVietsub Set Fire To The Rain  The Hills  Adele  The Weeknd  tiktok mashup.mp3";
+import Song131 from "../assets/Adele/y2mate.com - Rolling In The Deep Adele Cover by The All Ways.mp3";
+
+import Song132 from "../assets/Vicetone/y2mate.com - Vicetone  Nevada ft Cozi Zuehlsdorff.mp3";
+import Song133 from "../assets/Vicetone/y2mate.com - Vicetone  Walk Thru Fire Lyrics ft Meron Ryan.mp3";
+import Song134 from "../assets/Vicetone/y2mate.com - Vicetone  Way Back feat Cozi Zuehlsdorff.mp3";
+import Song135 from "../assets/Vicetone/y2mate.com - Vicetone ft Kat Nestel  Nothing Stopping Me Lyric Video Premiere.mp3";
+
+import Song136 from "../assets/2022/y2mate.com - Cool for the Summer  Demi Lovato  Sped Up Lyrics  Vietsub  TikTok .mp3";
+import Song137 from "../assets/2022/y2mate.com - Cool Kids  Echosmith  Sped Up Lyrics  Vietsub  TikTok .mp3";
+import Song138 from "../assets/2022/y2mate.com - Duke  Jones  My Money Dont Jiggle Jiggle It Folds Lyrics TikTok Song.mp3";
+import Song139 from "../assets/2022/y2mate.com - Glass Animals  Heat Waves Slowed TikTokLyrics sometimes all i think about is you late nights.mp3";
+import Song140 from "../assets/2022/y2mate.com - Its Corn  Songify This ft Recess Therapy.mp3";
+import Song141 from "../assets/2022/y2mate.com - Lizzo  About Damn Time Lyrics.mp3";
+import Song142 from "../assets/2022/y2mate.com - Lucky Twice  Lucky Lyrics Im So Lucky Lucky Im So Lovely Lovely TikTok Remix.mp3";
+import Song143 from "../assets/2022/y2mate.com - Nicki Minaj  Super Freaky Girl Official Music Video.mp3";
+import Song144 from "../assets/2022/y2mate.com - Nicky Youre dazy  Sunroof Lyrics.mp3";
+import Song145 from "../assets/2022/y2mate.com - Yung Gravy  Betty Get Money Lyrics never gonna give you up.mp3";
+
+
 const songs = [
+  {
+    song: "cool for the summer",
+    name: "Demi Lovato",
+    src: Song136,
+    nation: "US UK",
+    type: "Trending2022",
+    img: "https://i.pinimg.com/564x/39/ac/c3/39acc3d755c3f360c1d907dd4e796363.jpg",
+  },
+  {
+    song: "sunroof",
+    name: "Nicky Youre, dazy",
+    src: Song144,
+    nation: "US UK",
+    type: "Trending2022",
+    img: "https://i.pinimg.com/564x/77/44/67/774467478009fd8baf5ae846891b2492.jpg",
+  },
+  {
+    song: "My Money Don't Jiggle Jiggle It Folds",
+    name: "Duke & Jones",
+    src: Song138,
+    nation: "US UK",
+    type: "Trending2022",
+    img: "https://i.pinimg.com/564x/4e/0c/d5/4e0cd56a5f3772d120fc52ae6a76e3ed.jpg",
+  },
+  {
+    song: "lucky twice",
+    name: "Lucky",
+    src: Song142,
+    nation: "US UK",
+    type: "Trending2022",
+    img: "https://i.pinimg.com/564x/40/d5/78/40d578de33e8a107cc8e5ce945491e59.jpg",
+  },
+  {
+    song: "heat waves",
+    name: "Glass Animals",
+    src: Song139,
+    nation: "US UK",
+    type: "Trending2022",
+    img: "https://i.pinimg.com/564x/7e/82/46/7e82466967a18fd9dea59aa192063b5e.jpg",
+  },
+  {
+    song: "its corn",
+    name: "Songify This ft. Tariq and Recess Therapy",
+    src: Song140,
+    nation: "US UK",
+    type: "Trending2022",
+    img: "https://i.pinimg.com/564x/90/61/91/90619147c25475ab64510707544a67fb.jpg",
+  },
+  {
+    song: "Betty (Get Money) (never gonna give you up)",
+    name: "Yung Gravy",
+    src: Song145,
+    nation: "US UK",
+    type: "Trending2022",
+    img: "https://i.pinimg.com/564x/0c/13/3c/0c133c809d00b0def401638829f4c927.jpg",
+  },
+  {
+    song: "Super Freaky Girl",
+    name: "Nicki Minaj",
+    src: Song143,
+    nation: "US UK",
+    type: "Trending2022",
+    img: "https://i.pinimg.com/564x/4f/db/6a/4fdb6adf78cc21e399552d935d5ae30e.jpg",
+  },
+  {
+    song: "About Damn Time",
+    name: "Lizzo",
+    src: Song141,
+    nation: "US UK",
+    type: "Trending2022",
+    img: "https://i.pinimg.com/736x/76/b6/39/76b6394e20583597d4d17dd0d06a0ca7.jpg",
+  },
+  {
+    song: "Cool Kids",
+    name: "Echosmith",
+    src: Song137,
+    nation: "US UK",
+    type: "Trending2022",
+    img: "https://i.pinimg.com/564x/18/cd/19/18cd19955d8e89f798471d7baaae86a0.jpg",
+  },
+  {
+    song: "Walk Thru Fire (Lyrics)",
+    name: "Vicetone ft. Meron Ryan",
+    src: Song133,
+    nation: "US UK",
+    type: "Pop",
+    img: "https://i.pinimg.com/564x/a2/e5/17/a2e51717c81888195fef87d955b24d60.jpg",
+  },
+  {
+    song: "Way Back",
+    name: "Vicetone feat. Cozi Zuehlsdorff",
+    src: Song134,
+    nation: "US UK",
+    type: "Pop",
+    img: "https://i.pinimg.com/564x/35/78/30/3578301417b0a6739a3cb3f35892b5c3.jpg",
+  },
+  {
+    song: "Nevada",
+    name: "Vicetone ft. Cozi Zuehlsdorff",
+    src: Song132,
+    nation: "US UK",
+    type: "Pop",
+    img: "https://i.pinimg.com/736x/ed/65/06/ed6506f59676e8818b83bb2b45e581ae.jpg",
+  },
+  {
+    song: "Nothing Stopping Me",
+    name: "Vicetone ft. Kat Nestel",
+    src: Song135,
+    nation: "US UK",
+    type: "Pop",
+    img: "https://i.pinimg.com/564x/05/3e/32/053e32165bc61fdf0ba23bfd6cd2281f.jpg",
+  },
+  {
+    song: "Send My Love",
+    name: "Adele cover by Sit Still, Look Pretty",
+    src: Song129,
+    nation: "US UK",
+    type: "Pop",
+    img: "https://i.pinimg.com/564x/c9/ff/15/c9ff1523ab2b8f86f63e1ad82c6c01d5.jpg",
+  },
+  {
+    song: "When we were young",
+    name: "Adele (John Lundvik Acoustic Cover)",
+    src: Song127,
+    nation: "US UK",
+    type: "Pop",
+    img: "https://i.pinimg.com/564x/af/eb/99/afeb99ada9a5cd1c40a513e20fd7b712.jpg",
+  },
+  {
+    song: "Set Fire To The Rain - The Hills",
+    name: "Adele - The Weeknd",
+    src: Song130,
+    nation: "US UK",
+    type: "Pop",
+    img: "https://i.pinimg.com/564x/36/81/4c/36814c175f5c26f09081c76b3a14dbc8.jpg",
+  },
+  {
+    song: "Easy On Me",
+    name: "Adele(Cover by Leroy Sanchez)",
+    src: Song128,
+    nation: "US UK",
+    type: "Pop",
+    img: "https://i.pinimg.com/736x/a8/3a/86/a83a866d2431a38c69b70cb63592fa76.jpg",
+  },
+  {
+    song: "Hello",
+    name: "Adele",
+    src: Song125,
+    nation: "US UK",
+    type: "Pop",
+    img: "https://i.pinimg.com/564x/04/d2/c9/04d2c97466195b1ea43c6d7abeb080f6.jpg",
+  },
+  {
+    song: "Rolling in the deep",
+    name: "Adele",
+    src: Song131,
+    nation: "US UK",
+    type: "Pop",
+    img: "https://i.pinimg.com/564x/23/48/8a/23488acdcdbd6a263e7ae866403a80fc.jpg",
+  },
+  {
+    song: "someone like you",
+    name: "Adele",
+    src: Song126,
+    nation: "US UK",
+    type: "Pop",
+    img: "https://i.pinimg.com/736x/a7/42/c4/a742c4d24151b43abe1fa7d35de9e4c2.jpg",
+  },
+  {
+    song: "Dark Horse",
+    name: "Katy Perry",
+    src: Song124,
+    nation: "US UK",
+    type: "Pop",
+    img: "https://i.pinimg.com/564x/47/68/09/476809848fa4af246d48f22da7cf1c40.jpg",
+  },
+  {
+    song: "Roar",
+    name: "Katy Perry",
+    src: Song122,
+    nation: "US UK",
+    type: "Pop",
+    img: "https://i.pinimg.com/564x/e1/d8/c5/e1d8c562dee0b43dd37165dd631a5c65.jpg",
+  },
+  {
+    song: "The one that got away",
+    name: "Katy Perry",
+    src: Song123,
+    nation: "US UK",
+    type: "Pop",
+    img: "https://i.pinimg.com/564x/08/6e/6b/086e6b6222aae33482dc6d52e4a88820.jpg",
+  },
+  {
+    song: "Firework",
+    name: "Katy Perry",
+    src: Song121,
+    nation: "US UK",
+    type: "Pop",
+    img: "https://i.pinimg.com/564x/7e/1f/87/7e1f87d1ffaeb48cbb89a89aabe9f0ac.jpg",
+  },
+  {
+    song: " Shallow (from A Star Is Born)",
+    name: "Lady Gaga, Bradley Cooper",
+    src: Song120,
+    nation: "US UK",
+    type: "Pop",
+    img: "https://i.pinimg.com/564x/35/75/4d/35754d2757cea129b3c7a1cf4b95816a.jpg",
+  },
+  {
+    song: "As It Was",
+    name: "Harry Styles",
+    src: Song117,
+    nation: "US UK",
+    type: "Trending2022",
+    img: "https://i.pinimg.com/564x/bb/99/d3/bb99d3c4ddd9e6fcdcd38542d98b3686.jpg",
+  },
+  {
+    song: "Watermelon Sugar",
+    name: "Harry Styles",
+    src: Song119,
+    nation: "US UK",
+    type: "Trending2021",
+    img: "https://i.pinimg.com/564x/72/db/8d/72db8d6667cb578b304d92d4281e90d6.jpg",
+  },
+  {
+    song: "Late Night Talking",
+    name: "Harry Styles",
+    src: Song118,
+    nation: "US UK",
+    type: "Pop",
+    img: "https://i.pinimg.com/564x/d7/2b/9d/d72b9d3e2b37720b4a0eaea631d960de.jpg",
+  },
+  {
+    song: "Bones",
+    name: "Imagine Dragons",
+    src: Song116,
+    nation: "US UK",
+    type: "Pop",
+    img: "https://i.pinimg.com/564x/25/53/3d/25533d26e1a6ac0b7207f8bb9b95394d.jpg",
+  },
+  {
+    song: "Diamonds",
+    name: "Sam Smith",
+    src: Song112,
+    nation: "US UK",
+    type: "Pop",
+    img: "https://i.pinimg.com/736x/25/e0/df/25e0df74e69d4a832cdb475a9fcf3d93.jpg",
+  },
+  {
+    song: "Promises",
+    name: "Calvin Harris ft Sam Smith",
+    src: Song110,
+    nation: "US UK",
+    type: "Pop",
+    img: "https://i.pinimg.com/736x/41/1e/e1/411ee13c1b5f31a4c069f1093c718d90.jpg",
+  },
+  {
+    song: "Too Good At Goodbyes ( Acoustic )",
+    name: "Sam Smith",
+    src: Song114,
+    nation: "US UK",
+    type: "Pop",
+    img: "https://i.pinimg.com/564x/6c/87/b9/6c87b9d4c96b351de12f1e023e2a5742.jpg",
+  },
+  {
+    song: "La la la",
+    name: "Naughty Boy ft. Sam Smith Cover by VonCKen",
+    src: Song111,
+    nation: "US UK",
+    type: "Pop",
+    img: "https://i.pinimg.com/564x/4b/23/3d/4b233dc758f6637fb70e26231b853176.jpg",
+  },
+  {
+    song: "I'm Not The Only One",
+    name: "Sam Smith",
+    src: Song113,
+    nation: "US UK",
+    type: "Pop",
+    img: "https://i.pinimg.com/564x/f2/f8/97/f2f89741fc2af453efff16105fe951f7.jpg",
+  },
+  {
+    song: "Unholy",
+    name: "Sam Smith, Kim Petras",
+    src: Song115,
+    nation: "US UK",
+    type: "Trending2022",
+    img: "https://i.pinimg.com/564x/2b/13/54/2b1354d5346fb477d17f38ce72458f04.jpg",
+  },
   {
     song: "Beautiful now",
     name: "Zedd",
@@ -985,7 +1316,7 @@ const songs = [
     name: "MONO",
     src: MONO,
     nation: "VPOP",
-    type: "Viral,Tiktok,Drop",
+    type: "Viral,Tiktok,Drop,Trending2022",
     img: "https://hypeddit-gates-prod.s3.amazonaws.com/q10azb_coverartmanual",
   },
   {
@@ -993,7 +1324,7 @@ const songs = [
     name: "Daft Punk",
     src: GetLucky,
     nation: "US UK",
-    type: "Viral,Tiktok",
+    type: "Viral,Tiktok,Trending2022",
     img: "https://i.pinimg.com/564x/77/2c/79/772c7936e2820b26f3bf6f5580c031db.jpg",
   },
   {
