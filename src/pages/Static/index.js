@@ -9,7 +9,7 @@ const Static = () => {
   //check and set init static
   useEffect(() => {
     if (
-      localStorage.getItem("static") === null ||
+      localStorage.getItem("static") === null &&
       JSON.parse(localStorage.getItem("static").length !== songsSidebars.length)
     ) {
       let array = [];

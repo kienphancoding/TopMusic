@@ -58,3 +58,26 @@
     }
   }
 }
+
+@media (max-width: 480px) {
+  .main {
+    display: flex;
+
+    img {
+      --radius: 120px;
+      width: var(--radius);
+      height: var(--radius);
+      min-width: var(--radius);
+    }
+    h1 {
+      max-height: 60px;
+      font-size: 25px;
+      font-weight: 600;
+    }
+    p {
+      max-height: 50px;
+      font-size: 20px;
+      font-weight: 600;
+    }
+  }
+}

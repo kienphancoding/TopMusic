@@ -142,9 +142,11 @@
     .item {
       h1 {
         font-size: 18px;
+        max-height: 40px;
       }
       p {
         font-size: 13px;
+        max-height: 30px;
       }
     }
   }
