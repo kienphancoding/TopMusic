@@ -22,17 +22,21 @@
   color: var(--color-5);
   -webkit-user-select: none;
   user-select: none;
+  overflow-x: none;
 }
 body{
   background-color: var(--color-1);
+  
   &::-webkit-scrollbar {
     width: 10px;
     background-color: var(--color-1);
+    display: none;
   }
   &::-webkit-scrollbar-thumb {
     background-color: var(--color-6);
     border-radius: 10px;
   }
+  
 }
 a{
   text-decoration: none;

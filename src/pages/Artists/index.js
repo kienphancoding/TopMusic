@@ -168,7 +168,7 @@ const Artists = () => {
       }
     }
     localStorage.setItem("staticPlay", JSON.stringify(staticPlay));
-  }, [indexSong, name, loopSong,play]);
+  }, [indexSong, name, loopSong, play]);
 
   //static duration
   useEffect(() => {
@@ -182,7 +182,7 @@ const Artists = () => {
     }, 1000);
 
     return () => clearInterval(timerId);
-  }, [indexSong, name,play, loopSong]);
+  }, [indexSong, name, play, loopSong]);
 
   return (
     <div className={cx(style.wrapper)}>

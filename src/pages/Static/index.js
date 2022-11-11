@@ -14,16 +14,12 @@ import {
   Legend,
   Scatter,
   ResponsiveContainer,
-} from 'recharts';
+} from "recharts";
 
 const Static = () => {
-
   //check and set init static
   useEffect(() => {
-    if (
-      localStorage.getItem("staticPlay") === null &&
-      JSON.parse(localStorage.getItem("staticPlay").length !== songsSidebars.length)
-    ) {
+    if (localStorage.getItem("staticPlay") === null) {
       let array = [];
       songsSidebars.map(() => {
         array.push(0);
@@ -33,22 +29,28 @@ const Static = () => {
     }
   }, []);
 
-  const data = songsSidebars.map((x,index)=>{
-    return{
-      name:x.name,
-      play: JSON.parse(localStorage.getItem("staticPlay"))[index],
-      duration: JSON.parse(localStorage.getItem("staticDuration"))[index],
-      rate:Math.round(JSON.parse(localStorage.getItem("staticDuration"))[index]/JSON.parse(localStorage.getItem("staticPlay"))[index]) || 0
-    }
-  })
-
+  const data = songsSidebars.map((x, index) => {
+    return {
+      name: x.name,
+      play: JSON.parse(localStorage.getItem("staticPlay"))
+        ? JSON.parse(localStorage.getItem("staticPlay"))[index]
+        : 0,
+      duration: JSON.parse(localStorage.getItem("staticDuration"))
+        ? JSON.parse(localStorage.getItem("staticDuration"))[index]
+        : 0,
+      rate: JSON.parse(localStorage.getItem("staticPlay"))
+        ? Math.round(
+            JSON.parse(localStorage.getItem("staticDuration"))[index] /
+              JSON.parse(localStorage.getItem("staticPlay"))[index]
+          ) || 0
+        : 0,
+    };
+  });
 
   return (
     <div className={clsx(style.wrapper)}>
-      <ResponsiveContainer width="100%" height="100%">
+      <ResponsiveContainer>
         <ComposedChart
-          width={600}
-          height={400}
           data={data}
           margin={{
             top: 20,
@@ -62,7 +64,12 @@ const Static = () => {
           <YAxis />
           <Tooltip />
           <Legend />
-          <Area type="monotone" dataKey="duration" fill="#8884d8" stroke="#8884d8" />
+          <Area
+            type="monotone"
+            dataKey="duration"
+            fill="#8884d8"
+            stroke="#8884d8"
+          />
           <Bar dataKey="play" barSize={20} fill="#413ea0" />
           <Line type="monotone" dataKey="rate" stroke="#ff7300" />
           {/* <Scatter dataKey="rate" fill="red" /> */}
