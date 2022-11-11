@@ -19,7 +19,10 @@ const FullSongs = ({ indexSong, setIndexSong }) => {
           >
             <img className={cx(style.img)} src={x.img} alt={x.name} />
             <div className={cx(style.info)}>
+              <div style={{display:"flex"}}>
               <h1>{x.song}</h1>
+              {x.type.toUpperCase().includes("VIP") && <p style={{fontSize:"20px",backgroundColor:"var(--color-5)",color:"var(--color-1)",marginLeft:"10px",fontWeight:"600"}}>VIP</p>}
+              </div>
               <p>{x.name}</p>
             </div>
           </div>

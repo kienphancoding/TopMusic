@@ -226,7 +226,7 @@ const songs = [
     name: "Glass Animals",
     src: Song139,
     nation: "US UK",
-    type: "Trending2022",
+    type: "Trending2021",
     img: "https://i.pinimg.com/564x/7e/82/46/7e82466967a18fd9dea59aa192063b5e.jpg",
   },
   {
@@ -330,7 +330,7 @@ const songs = [
     name: "Adele(Cover by Leroy Sanchez)",
     src: Song128,
     nation: "US UK",
-    type: "Pop",
+    type: "Trending2021",
     img: "https://i.pinimg.com/736x/a8/3a/86/a83a866d2431a38c69b70cb63592fa76.jpg",
   },
   {
@@ -410,7 +410,7 @@ const songs = [
     name: "Harry Styles",
     src: Song119,
     nation: "US UK",
-    type: "Trending2021",
+    type: "Trending2020",
     img: "https://i.pinimg.com/564x/72/db/8d/72db8d6667cb578b304d92d4281e90d6.jpg",
   },
   {
@@ -418,7 +418,7 @@ const songs = [
     name: "Harry Styles",
     src: Song118,
     nation: "US UK",
-    type: "Pop",
+    type: "Trending2022",
     img: "https://i.pinimg.com/564x/d7/2b/9d/d72b9d3e2b37720b4a0eaea631d960de.jpg",
   },
   {
@@ -434,7 +434,7 @@ const songs = [
     name: "Sam Smith",
     src: Song112,
     nation: "US UK",
-    type: "Pop",
+    type: "Trending2020",
     img: "https://i.pinimg.com/736x/25/e0/df/25e0df74e69d4a832cdb475a9fcf3d93.jpg",
   },
   {
@@ -458,7 +458,7 @@ const songs = [
     name: "Naughty Boy ft. Sam Smith Cover by VonCKen",
     src: Song111,
     nation: "US UK",
-    type: "Pop",
+    type: "Pop,vip",
     img: "https://i.pinimg.com/564x/4b/23/3d/4b233dc758f6637fb70e26231b853176.jpg",
   },
   {
@@ -618,7 +618,7 @@ const songs = [
     name: "Justin Beiber ft The Kid LAROI",
     src: Song108,
     nation: "US UK",
-    type: "Pop",
+    type: "Trending2021",
     img: "https://i.pinimg.com/564x/14/e8/b3/14e8b39e55e8b7d4d422527759daa5ef.jpg",
   },
   {
@@ -634,7 +634,7 @@ const songs = [
     name: "Justin Beiber",
     src: Song104,
     nation: "US UK",
-    type: "Pop",
+    type: "Trending2021",
     img: "https://i.pinimg.com/564x/c9/e6/38/c9e63862eaf5a6f5a32ab84bee73e3db.jpg",
   },
   {
@@ -642,7 +642,7 @@ const songs = [
     name: "Justin Beiber",
     src: Song106,
     nation: "US UK",
-    type: "Pop",
+    type: "Trending2020",
     img: "https://i.pinimg.com/564x/8e/a8/1f/8ea81f106de5a588deac17b30e456f3c.jpg",
   },
   {
@@ -772,7 +772,7 @@ const songs = [
     name: "Ed Sheeran(cover by TIN)",
     src: Song44,
     nation: "US UK",
-    type: "Ballah",
+    type: "Trending2021",
     img: "https://i.pinimg.com/564x/a9/cd/8e/a9cd8e396760c854907dc19cfd184d87.jpg",
   },
   {
@@ -804,7 +804,7 @@ const songs = [
     name: "Dua Lipa",
     src: Song32,
     nation: "US UK",
-    type: "Pop",
+    type: "Trending2020",
     img: "https://i.pinimg.com/564x/78/03/48/78034813047797fb6752629f7c11f4ed.jpg",
   },
   {
@@ -1092,7 +1092,7 @@ const songs = [
     name: "Ariana Grande",
     src: Add,
     nation: "US UK",
-    type: "Pop",
+    type: "Trending2021,Trending2020",
     img: "https://i.pinimg.com/564x/a6/d1/76/a6d1761cc0da31117d6765242bc7a369.jpg",
   },
   {
@@ -1100,7 +1100,7 @@ const songs = [
     name: "Ariana Grande",
     src: Positions,
     nation: "US UK",
-    type: "Pop",
+    type: "Trending2020",
     img: "https://i.pinimg.com/564x/a7/d6/80/a7d6801fd7ad623e2e5371dd6d0a1c03.jpg",
   },
   {
@@ -1124,7 +1124,7 @@ const songs = [
     name: "Maroon 5 (cover by xooos)",
     src: BM,
     nation: "US UK",
-    type: "Pop",
+    type: "Trending2021",
     img: "https://i.pinimg.com/564x/9f/c6/9b/9fc69ba3cd072d06ab18db142b5da690.jpg",
   },
   {
@@ -1352,7 +1352,7 @@ const songs = [
     img: "https://i.pinimg.com/564x/48/55/f1/4855f1ff6fee2fce317d3d7ae690afee.jpg",
   },
   {
-    song: "뚜두뚜두 DDUDU DDUDU",
+    song: "DDUDU DDUDU",
     name: "BLACKPINK",
     src: DDD,
     nation: "KPOP",

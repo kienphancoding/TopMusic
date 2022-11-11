@@ -17,6 +17,7 @@ const Home = () => {
   const [play, setPlay] = useState(true); // true la hien nut play
   const [indexSong, setIndexSong] = useState(0); // vi tri hien tai cua bai hat
   const [loopSong, setLoopSong] = useState(false); // lap lai bai hat
+  const timeWaiting = 3000;
 
   const handlePlay = () => {
     setPlay(false);
@@ -112,12 +113,19 @@ const Home = () => {
     }, 100);
 
     return () => clearInterval(timeCheckLoop);
-  }, [loopSong,indexSong]);
+  }, [loopSong, indexSong]);
 
   //play or pause
   useEffect(() => {
     if (play === false) {
-      noRef.current.play();
+      if (songs[indexSong].type.toUpperCase().includes("VIP")) {
+        let waiting = setTimeout(() => {
+          noRef.current.play();
+        }, timeWaiting);
+        return () => clearTimeout(waiting);
+      } else {
+        noRef.current.play();
+      }
     } else {
       noRef.current.pause();
     }
@@ -130,7 +138,6 @@ const Home = () => {
       <FullSongs indexSong={indexSong} setIndexSong={setIndexSong} />
 
       <audio ref={noRef} src={songs[indexSong].src} />
-
       <div
         className={cx(style.durationBar)}
         ref={RefWidth}

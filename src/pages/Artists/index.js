@@ -16,12 +16,20 @@ const Artists = () => {
   const [play, setPlay] = useState(true); // true la hien nut play
   const [indexSong, setIndexSong] = useState(0); // vi tri hien tai cua bai hat
   const [loopSong, setLoopSong] = useState(false); // lap lai bai hat
-  const [staticSong, setStaticSong] = useState(() => {
+  const [staticPlay, setStaticSong] = useState(() => {
     let array = [];
     songsSidebars.map(() => {
       array.push(0);
     });
-    const jsonStorage = JSON.parse(localStorage.getItem("static"));
+    const jsonStorage = JSON.parse(localStorage.getItem("staticPlay"));
+    return jsonStorage ?? array;
+  });
+  const [staticDuration, setStaticDuration] = useState(() => {
+    let array = [];
+    songsSidebars.map(() => {
+      array.push(0);
+    });
+    const jsonStorage = JSON.parse(localStorage.getItem("staticDuration"));
     return jsonStorage ?? array;
   });
 
@@ -152,15 +160,29 @@ const Artists = () => {
     }
   }, [play, indexSong, loopSong, name]);
 
-  //static
+  //static play
   useEffect(() => {
     for (let i = 0; i <= songsSidebars.length - 1; i++) {
-      if (songsSidebars[i].path.includes(name)) {
-        staticSong[i]++
+      if (songsSidebars[i].path.includes(name) && !play) {
+        staticPlay[i]++;
       }
     }
-    localStorage.setItem("static", JSON.stringify(staticSong));
-  }, [indexSong, name,loopSong]);
+    localStorage.setItem("staticPlay", JSON.stringify(staticPlay));
+  }, [indexSong, name, loopSong,play]);
+
+  //static duration
+  useEffect(() => {
+    let timerId = setInterval(() => {
+      for (let i = 0; i <= songsSidebars.length - 1; i++) {
+        if (songsSidebars[i].path.includes(name) && !play) {
+          staticDuration[i]++;
+        }
+      }
+      localStorage.setItem("staticDuration", JSON.stringify(staticDuration));
+    }, 1000);
+
+    return () => clearInterval(timerId);
+  }, [indexSong, name,play, loopSong]);
 
   return (
     <div className={cx(style.wrapper)}>
