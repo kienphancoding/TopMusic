@@ -29,7 +29,34 @@ const Static = () => {
     }
   }, []);
 
-  const data = songsSidebars.map((x, index) => {
+  const dataDuration = songsSidebars.map((x, index) => {
+    return {
+      name: x.name,
+      duration: JSON.parse(localStorage.getItem("staticDuration"))
+        ? JSON.parse(localStorage.getItem("staticDuration"))[index]
+        : 0,
+    };
+  });
+
+  const dataPlay = songsSidebars.map((x, index) => {
+    return {
+      name: x.name,
+      play: JSON.parse(localStorage.getItem("staticPlay"))
+        ? JSON.parse(localStorage.getItem("staticPlay"))[index]
+        : 0,
+      duration: JSON.parse(localStorage.getItem("staticDuration"))
+        ? JSON.parse(localStorage.getItem("staticDuration"))[index]
+        : 0,
+      rate: JSON.parse(localStorage.getItem("staticPlay"))
+        ? Math.round(
+            JSON.parse(localStorage.getItem("staticDuration"))[index] /
+              JSON.parse(localStorage.getItem("staticPlay"))[index]
+          ) || 0
+        : 0,
+    };
+  });
+
+  const dataRate = songsSidebars.map((x, index) => {
     return {
       name: x.name,
       play: JSON.parse(localStorage.getItem("staticPlay"))
@@ -51,7 +78,7 @@ const Static = () => {
     <div className={clsx(style.wrapper)}>
       <ResponsiveContainer>
         <ComposedChart
-          data={data}
+          data={dataDuration}
           margin={{
             top: 20,
             right: 20,
@@ -70,7 +97,44 @@ const Static = () => {
             fill="#8884d8"
             stroke="#8884d8"
           />
+        </ComposedChart>
+      </ResponsiveContainer>
+
+      <ResponsiveContainer>
+        <ComposedChart
+          data={dataPlay}
+          margin={{
+            top: 20,
+            right: 20,
+            bottom: 20,
+            left: 20,
+          }}
+        >
+          <CartesianGrid stroke="#f5f5f5" />
+          <XAxis dataKey="name" scale="band" />
+          <YAxis />
+          <Tooltip />
+          <Legend />
           <Bar dataKey="play" barSize={20} fill="#413ea0" />
+          {/* <Scatter dataKey="rate" fill="red" /> */}
+        </ComposedChart>
+      </ResponsiveContainer>
+
+      <ResponsiveContainer>
+        <ComposedChart
+          data={dataRate}
+          margin={{
+            top: 20,
+            right: 20,
+            bottom: 20,
+            left: 20,
+          }}
+        >
+          <CartesianGrid stroke="#f5f5f5" />
+          <XAxis dataKey="name" scale="band" />
+          <YAxis />
+          <Tooltip />
+          <Legend />
           <Line type="monotone" dataKey="rate" stroke="#ff7300" />
           {/* <Scatter dataKey="rate" fill="red" /> */}
         </ComposedChart>
