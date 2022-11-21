@@ -187,8 +187,130 @@ import Song143 from "../assets/2022/y2mate.com - Nicki Minaj  Super Freaky Girl 
 import Song144 from "../assets/2022/y2mate.com - Nicky Youre dazy  Sunroof Lyrics.mp3";
 import Song145 from "../assets/2022/y2mate.com - Yung Gravy  Betty Get Money Lyrics never gonna give you up.mp3";
 
+import Song150 from "../assets/Trend/y2mate.com - AJR  Worlds Smallest Violin Lyrics.mp3";
+import Song151 from "../assets/Trend/y2mate.com - BoyWithUke  Toxic.mp3";
+import Song152 from "../assets/Trend/y2mate.com - Counting Stars  OneRepublic  Alex Goot Chrissy Costanza KHS.mp3";
+import Song153 from "../assets/Trend/y2mate.com - Elton John Dua Lipa  Cold Heart Lyrics PNAU Remix.mp3";
+import Song154 from "../assets/Trend/y2mate.com - Jamie Miller  Heres Your Perfect.mp3.webm";
+import Song155 from "../assets/Trend/y2mate.com - JVKE  Golden Hour.mp3";
+import Song156 from "../assets/Trend/y2mate.com - Oliver Tree  Life Goes On.mp3";
+import Song157 from "../assets/Trend/y2mate.com - OneRepublic  I Aint Worried Lyrics.mp3";
+import Song158 from "../assets/Trend/y2mate.com - Post Malone  I Like You Lyrics ft Doja Cat.mp3";
+import Song159 from "../assets/Trend/y2mate.com - Steve Lacy  Bad Habit.mp3";
+import Song160 from "../assets/Trend/y2mate.com - Timbaland feat OneRepublic  Apologize Lyrics.mp3";
+import Song161 from "../assets/Trend/y2mate.com - Vietsub  abcdefu  GAYLE  Nhạc hot TikTok  Lyrics Video.mp3";
+import Song162 from "../assets/Trend/y2mate.com - Vietsub  Lyrics Under the Influence  Chris Brown  Sped Up.mp3";
 
 const songs = [
+  {
+    song: "Bad Habit",
+    name: "Steve Lacy",
+    src: Song159,
+    nation: "US UK",
+    type: "Trending2022",
+    img: "https://i.pinimg.com/564x/24/c7/f3/24c7f3039f90383472e400182ac483df.jpg",
+  },
+
+  {
+    song: "I Like You",
+    name: "Post Malone ft. Doja Cat",
+    src: Song158,
+    nation: "US UK",
+    type: "Trending2022",
+    img: "https://i.pinimg.com/736x/69/39/4a/69394a3ee57c278167dc776df88209c3.jpg",
+  },
+  {
+    song: "I Ain't Worried",
+    name: "OneRepublic",
+    src: Song157,
+    nation: "US UK",
+    type: "Trending2022",
+    img: "https://i.pinimg.com/564x/ad/86/e5/ad86e573dd8b94786f07c2f65630deb8.jpg",
+  },
+  {
+    song: "Under the Influence - Sped Up",
+    name: "Chris Brown",
+    src: Song162,
+    nation: "US UK",
+    type: "Trending2022",
+    img: "https://i.pinimg.com/564x/ff/e9/0d/ffe90df9b18113294bfd2ac24a406b6a.jpg",
+  },
+  {
+    song: "Golden Hour",
+    name: "JVKE",
+    src: Song155,
+    nation: "US UK",
+    type: "Trending2022",
+    img: "https://i.pinimg.com/564x/5e/9b/21/5e9b21ba37da1e2a1da41b2e0eb0107d.jpg",
+  },
+  {
+    song: "World's Smallest Violin",
+    name: "AJR",
+    src: Song150,
+    nation: "US UK",
+    type: "Trending2022",
+    img: "https://i.pinimg.com/564x/54/60/f4/5460f4b7c81d32c3299ba6466f51591f.jpg",
+  },
+
+  {
+    song: "Toxic",
+    name: "BoyWithUke",
+    src: Song151,
+    nation: "US UK",
+    type: "Trending2021",
+    img: "https://i.pinimg.com/564x/09/7d/93/097d9390e669050955f8a734e9e7c4bb.jpg",
+  },
+  {
+    song: "abcdefu",
+    name: "GAYLE",
+    src: Song161,
+    nation: "US UK",
+    type: "Trending2021",
+    img: "https://i.pinimg.com/564x/83/e2/12/83e2122bf4f0b835cf45dc70fe495b2d.jpg",
+  },
+  {
+    song: "Here's Your Perfect",
+    name: "Jamie Miller",
+    src: Song154,
+    nation: "US UK",
+    type: "Trending2021",
+    img: "https://i.pinimg.com/564x/2c/7c/e7/2c7ce7bb1fd1cc8e5e7fcd972bd01fd2.jpg",
+  },
+  {
+    song: "Cold Heart",
+    name: "Elton John, Dua Lipa",
+    src: Song153,
+    nation: "US UK",
+    type: "Trending2021",
+    img: "https://i.pinimg.com/736x/46/fc/8e/46fc8e962787c2bed6bcf91b1429a1f2.jpg",
+  },
+  {
+    song: "Life Goes On",
+    name: "Oliver Tree",
+    src: Song156,
+    nation: "US UK",
+    type: "Trending2021",
+    img: "https://i.pinimg.com/736x/04/69/50/046950d66bc34ff0c0423471a229a2a6.jpg",
+  },
+
+  {
+    song: "Apologize",
+    name: "Timbaland feat. OneRepublic",
+    src: Song160,
+    nation: "US UK",
+    type: "",
+    img: "https://i.pinimg.com/736x/2c/e3/64/2ce3645f825d71e635c79b5b00a91631.jpg",
+  },
+
+  {
+    song: "Counting stars",
+    name: "OneRepublic cover by Alex Goot, Chrissy Costanza, KHS",
+    src: Song152,
+    nation: "US UK",
+    type: "",
+    img: "https://i.pinimg.com/564x/1e/4f/7f/1e4f7fb9ee270944f2a76ff2555223a9.jpg",
+  },
+
   {
     song: "cool for the summer",
     name: "Demi Lovato",

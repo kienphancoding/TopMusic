@@ -7,10 +7,10 @@ const trendingSidebars = [
     path: "/Trending2021",
     name: "Trending 2021",
   },
-  // {
-  //   path: "/Trending2020",
-  //   name: "Trending 2020",
-  // },
+  {
+    path: "/Trending2020",
+    name: "Trending 2020",
+  },
   // {
   //   path: "/Trending2019",
   //   name: "Trending 2019",

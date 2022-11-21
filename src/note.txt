@@ -1,2 +1,0 @@
-muon them route : artists hay trending thi vao route va them noi dung
-them nhac nam o asset , va them content o song/index.js

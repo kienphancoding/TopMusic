@@ -115,11 +115,6 @@ const songsSidebars = [
     img: "https://i.pinimg.com/564x/ca/97/3c/ca973c39b981edfeeee6c27cebeb1024.jpg",
   },
   {
-    path: "/LadyGaga",
-    name: "Lady Gaga",
-    img: "https://i.pinimg.com/564x/2b/74/de/2b74de71bc16fc8f8fe83b877ac5de19.jpg",
-  },
-  {
     path: "/KatyPerry",
     name: "Katy Perry",
     img: "https://i.pinimg.com/564x/fa/29/8e/fa298e8d9e3ae6195b436a39089f14be.jpg",
@@ -138,6 +133,11 @@ const songsSidebars = [
     path: "/HarryStyles",
     name: "Harry Styles",
     img: "https://i.pinimg.com/564x/45/5b/ec/455bec752a19253ddfd095f6960511ae.jpg",
+  },
+  {
+    path: "/OneRepublic",
+    name: "OneRepublic",
+    img: "https://i.pinimg.com/564x/fc/9b/2f/fc9b2fa51929bce44b7eebf2da0854c6.jpg",
   },
 ];
 
