@@ -17,6 +17,7 @@ const Home = () => {
   const [play, setPlay] = useState(true); // true la hien nut play
   const [indexSong, setIndexSong] = useState(0); // vi tri hien tai cua bai hat
   const [loopSong, setLoopSong] = useState(false); // lap lai bai hat
+  const [randomSong, setRandomSong] = useState(false); // random bai hat
   const timeWaiting = 3000;
 
   const handlePlay = () => {
@@ -40,16 +41,19 @@ const Home = () => {
   };
 
   const handleRandomSong = () => {
-    for (let i = 0; i < songs.length; i++) {
+    setRandomSong(!randomSong);
+  };
+  
+  //random song
+  useEffect(() => {
+     for (let i = 0; i < songs.length; i++) {
       let random = Math.floor(Math.random() * songs.length);
       let temp;
       temp = songs[i];
       songs[i] = songs[random];
       songs[random] = temp;
     }
-    setIndexSong(indexSong === 0 ? ()=>indexSong + 1 : ()=>0);
-    setIndexSong(()=>0);
-  };
+  }, [randomSong]);
 
   const noRef = useRef(1);
   const RefWidth = useRef();
