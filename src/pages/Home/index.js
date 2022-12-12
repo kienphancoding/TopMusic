@@ -47,7 +47,8 @@ const Home = () => {
       songs[i] = songs[random];
       songs[random] = temp;
     }
-    setIndexSong(indexSong === 0 ? indexSong + 1 : 0);
+    setIndexSong(indexSong === 0 ? ()=>indexSong + 1 : ()=>0);
+    setIndexSong(()=>0);
   };
 
   const noRef = useRef(1);
@@ -84,6 +85,21 @@ const Home = () => {
     }, 500);
     return () => clearInterval(timeSetWidth);
   }, []);
+  
+  //loop song
+  useEffect(() => {
+    const timeCheckLoop = setInterval(() => {
+      if (
+        Math.floor(noRef.current.currentTime) ===
+          Math.floor(noRef.current.duration) &&
+        loopSong === true
+      ) {
+        noRef.current.currentTime = 0;
+      }
+    }, 100);
+
+    return () => clearInterval(timeCheckLoop);
+  }, [loopSong, indexSong]);
 
   //auto next song
   useEffect(() => {
@@ -98,22 +114,6 @@ const Home = () => {
 
     return () => clearInterval(timeCheckLoop);
   }, [indexSong]);
-
-  //loop song
-  useEffect(() => {
-    const timeCheckLoop = setInterval(() => {
-      if (
-        Math.floor(noRef.current.currentTime) ===
-          Math.floor(noRef.current.duration) &&
-        loopSong === true
-      ) {
-        noRef.current.currentTime = 0;
-        setLoopSong(false);
-      }
-    }, 100);
-
-    return () => clearInterval(timeCheckLoop);
-  }, [loopSong, indexSong]);
 
   //play or pause
   useEffect(() => {
